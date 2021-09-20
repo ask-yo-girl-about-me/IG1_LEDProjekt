@@ -1,0 +1,8 @@
+cd "Pfad wo repo hin sollte"							= Verzeichnis wechseln
+git clone https://github.com/aks-yp-girl-about-me/IG1_LEDProjekt.git		= Repo von Modul herunterladen
+git init									= Git Repo initialisieren
+git add "Datei"									= Eine neue Datei zum Commit adden
+git status									= Status anzeige von dem Momentanen stand
+git commit -m "Kommentar" 							= Commit bestätigen mit einem Kommentar
+git push -u origin main/master 							= Repo auf Git Hub pushen
+git log 									= Commit verlauf anschauen
