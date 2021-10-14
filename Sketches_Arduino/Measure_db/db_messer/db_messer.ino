@@ -5,7 +5,7 @@ const int pinAdc = A0;
  
 void setup()
 {
-    Serial.begin(9600);
+    Serial.begin(115200);
     //Serial.println("Grove - Sound Sensor Test...");
 }
  
@@ -21,4 +21,4 @@ void loop()
  
     Serial.println(sum);
     delay(10);
- }
+}
