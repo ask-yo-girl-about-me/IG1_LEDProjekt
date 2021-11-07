@@ -6,7 +6,7 @@ Dies ist das Projekt von Herr Schmidli und Götzer. In der Ablage finden sie das
 - [Projekt Auftrag](#Projekt-Auftrag)
     - [Projekt Beschrieb](#Projekt-Beschrieb)
 - [Analyse](#Analyse)
-    -  [Funktionale und nicht-funktionale Anforderungen](#FAnforderungen)
+    -  [Funktionale und nicht-funktionale Anforderungen](#Funktionale-und-nicht-funktionale-Anforderungen)
     - [Signalbeschrieb an den Ein- und Ausgängen](#Signalbeschrieb)
     - [Blockschaltbild mit sämtlichen Ein- und Ausgängen](#Blockschaltbild)
 - [Design](#Design)
@@ -27,7 +27,7 @@ Dies ist das Projekt von Herr Schmidli und Götzer. In der Ablage finden sie das
 # Projekt Beschrieb
 
 # Analyse
-## FAnforderungen
+## Funktionale-und-nicht-funktionale-Anforderungen
 ## Signalbeschrieb
 ## Blockschaltbild
 
@@ -47,8 +47,12 @@ Dies ist das Projekt von Herr Schmidli und Götzer. In der Ablage finden sie das
 # Fazit
 
 
-
-
-
-
 >«Wir erklären hiermit, dass wir diese Arbeit selbständig verfasst und keine anderen als die angegebenen Quellen benutzt haben. Alle Stellen, die wörtlich oder sinngemäss aus Quellen entnommen wurden, haben wir als solche gekennzeichnet.»
+
+[^1]:
+[^2]:
+[^3]:
+[^4]:
+[^5]:
+[^6]:
+[^7]:
