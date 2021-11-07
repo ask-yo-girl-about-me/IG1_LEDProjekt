@@ -88,7 +88,10 @@ Erforderliche Hardware für Projekt:
 # Design
 ## Detailschema
 ## Werte-Zuweisungs-Tabelle
+
 ## Program-Ablauf
+![Struktogramm](../03_Projekt/01_Structorizer/IG1_Structorizer.png)
+
 ## Definierte-Testcases
 
 # Implementierung
