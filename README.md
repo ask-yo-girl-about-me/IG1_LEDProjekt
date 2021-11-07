@@ -7,42 +7,42 @@ Dies ist das Projekt von Herr Schmidli und Götzer. In der Ablage finden sie das
     - [Projekt Beschrieb](#Projekt-Beschrieb)
 - [Analyse](#Analyse)
     -  [Funktionale und nicht-funktionale Anforderungen](#FAnforderungen)
-    - Signalbeschrieb an den Ein- und Ausgängen(#)
-    - Blockschaltbild mit sämtlichen Ein- und Ausgängen(#)
-- Design(#Design)
-    - Detailschema mit Pin-Granularität(#)
-    - Werte-Zuweisungs-Tabelle(#)
-    - Program-Ablauf (Struktogramm)(#)
-    - Definierte Testcases auf funktionalen und nicht-funktionalen Anforderungen(#)
-- Implementierung(#)
-    - Realisierung (Aufbau und Funktionsweise der Projektlösung)(#)
-    - Source Code mit Beschreibung(#)
-- Testing(#)
-    - Durchführung der Testcases(#)
-    - Reflexion (Problemstellungen)(#)
-    - Fazit(#)
+    - [Signalbeschrieb an den Ein- und Ausgängen](#Signalbeschrieb)
+    - [Blockschaltbild mit sämtlichen Ein- und Ausgängen](#Blockschaltbild)
+- [Design](#Design)
+    - [Detailschema mit Pin-Granularität](#Detailschema)
+    - [Werte-Zuweisungs-Tabelle](#Werte-Zuweisungs-Tabelle)
+    - [Program-Ablauf (Struktogramm)](#Program-Ablauf)
+    - [Definierte Testcases auf funktionalen und nicht-funktionalen Anforderungen](#Definierte-Testcases)
+- [Implementierung](#Implementierung)
+    - [Realisierung (Aufbau und Funktionsweise der Projektlösung)](#Realisierung)
+    - [Source Code mit Beschreibung](#Source-Code)
+- [Testing](#Testing)
+    - [Durchführung der Testcases](#Durchführung-Testcases)
+    - [Reflexion (Problemstellungen)](#Reflexion)
+    - [Fazit](#Fazit)
 
-# Projekt Auftrag
+# Projekt-Auftrag
 
 # Projekt Beschrieb
 
 # Analyse
-## Funktionale und nicht-funktionale Anforderungen
-## Signalbeschrieb an den Ein- und Ausgängen
-## Blockschaltbild mit sämtlichen Ein- und Ausgängen
+## FAnforderungen
+## Signalbeschrieb
+## Blockschaltbild
 
 # Design
-## Detailschema mit Pin-Granularität
+## Detailschema
 ## Werte-Zuweisungs-Tabelle
-## Program-Ablauf (Struktogramm)
-## Definierte Testcases auf funktionalen und nicht-funktionalen Anforderungen
+## Program-Ablauf
+## Definierte-Testcases
 
 # Implementierung
-# Realisierung (Aufbau und Funktionsweise der Projektlösung)
-# Source Code mit Beschreibung
+# Realisierung
+# Source-Code
 
 # Testing
-# Durchführung der Testcases
+# Durchführung-Testcases
 # Reflexion (Problemstellungen)
 # Fazit
 
