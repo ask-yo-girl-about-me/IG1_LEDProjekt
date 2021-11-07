@@ -23,6 +23,7 @@ Dies ist das Projekt von Herr Schmidli und Götzer. In der Ablage finden sie das
     - [Fazit](#Fazit)
 
 # Projekt-Auftrag
+Der Projekt Auftrag kann grundsätzlich vom Dokument [Link](src\01_Allgemein\01_Projektinfos\ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf "ITSE21a_IG1_Projektauftrag_Arduino_210908").
 
 # Projekt Beschrieb
 
