@@ -90,7 +90,7 @@ Erforderliche Hardware für Projekt:
 ## Werte-Zuweisungs-Tabelle
 
 ## Program-Ablauf
-![Struktogramm](../03_Projekt/01_Structorizer/IG1_Structorizer.png)
+![Struktogramm](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/01_Structorizer/IG1_Structorizer.png)
 
 ## Definierte-Testcases
 
