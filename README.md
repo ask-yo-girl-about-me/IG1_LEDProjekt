@@ -90,6 +90,8 @@ Erforderliche Hardware für Projekt:
 ## Werte-Zuweisungs-Tabelle
 
 ## Program-Ablauf
+Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
+
 ![Struktogramm](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/01_Structorizer/IG1_Structorizer.png)
 
 ## Definierte-Testcases
