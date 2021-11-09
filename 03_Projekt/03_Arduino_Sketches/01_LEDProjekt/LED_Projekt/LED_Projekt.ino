@@ -42,7 +42,7 @@ void loop()
   switch(num)
   {
     case 1:
-
+     // Sobald das Programm gestartet wird passiert im ersten Case nichts
       break;
       
     case 2:
