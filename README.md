@@ -3,24 +3,29 @@
 Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden sie das ganze Projekt und alle dazugehörigen Daten. Die ganze Ablage ist Dokumentiert und beschrieben.
 
 # Inhaltsverzeichnis
-- [Projekt Auftrag](#Projekt-Auftrag)
-    - [Projekt Beschrieb](#Projekt-Beschrieb)
-- [Analyse](#Analyse)
-    -  [Funktionale und nicht-funktionale Anforderungen](#Funktionale-und-nicht-funktionale-Anforderungen)
-    - [Signalbeschrieb an den Ein- und Ausgängen](#Signalbeschrieb)
-    - [Blockschaltbild mit sämtlichen Ein- und Ausgängen](#Blockschaltbild)
-- [Design](#Design)
-    - [Detailschema mit Pin-Granularität](#Detailschema)
-    - [Werte-Zuweisungs-Tabelle](#Werte-Zuweisungs-Tabelle)
-    - [Program-Ablauf (Struktogramm)](#Program-Ablauf)
-    - [Definierte Testcases auf funktionalen und nicht-funktionalen Anforderungen](#Definierte-Testcases)
-- [Implementierung](#Implementierung)
-    - [Realisierung (Aufbau und Funktionsweise der Projektlösung)](#Realisierung)
-    - [Source Code mit Beschreibung](#Source-Code)
-- [Testing](#Testing)
-    - [Durchführung der Testcases](#Durchführung-Testcases)
-    - [Reflexion (Problemstellungen)](#Reflexion)
-    - [Fazit](#Fazit)
+- [IG1_LEDProjekt](#ig1_ledprojekt)
+- [Inhaltsverzeichnis](#inhaltsverzeichnis)
+- [Projekt-Auftrag](#projekt-auftrag)
+  - [Lernziele](#lernziele)
+  - [Projekt Aufgabe](#projekt-aufgabe)
+  - [Abgabe der Projektarbeit](#abgabe-der-projektarbeit)
+- [Projekt Beschrieb](#projekt-beschrieb)
+- [Analyse](#analyse)
+  - [Funktionale-und-nicht-funktionale-Anforderungen](#funktionale-und-nicht-funktionale-anforderungen)
+  - [Signalbeschrieb](#signalbeschrieb)
+  - [Blockschaltbild](#blockschaltbild)
+- [Design](#design)
+  - [Detailschema](#detailschema)
+  - [Werte-Zuweisungs-Tabelle](#werte-zuweisungs-tabelle)
+  - [Program-Ablauf](#program-ablauf)
+  - [Definierte-Testcases](#definierte-testcases)
+- [Implementierung](#implementierung)
+- [Realisierung](#realisierung)
+- [Source-Code](#source-code)
+- [Testing](#testing)
+- [Durchführung-Testcases](#durchführung-testcases)
+- [Reflexion (Problemstellungen)](#reflexion-problemstellungen)
+- [Fazit](#fazit)
 
 # Projekt-Auftrag
 Der Projekt Auftrag kann grundsätzlich vom Dokument [ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/01_Allgemein/01_Projektinfos/ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf). 
@@ -84,6 +89,10 @@ Erforderliche Hardware für Projekt:
 ## Funktionale-und-nicht-funktionale-Anforderungen
 ## Signalbeschrieb
 ## Blockschaltbild
+
+[TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
+
+![TinkerCAD](../IG1_LEDProjekt/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
 # Design
 ## Detailschema
