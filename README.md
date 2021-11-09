@@ -20,15 +20,15 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
   - [Program-Ablauf](#program-ablauf)
   - [Definierte-Testcases](#definierte-testcases)
 - [Implementierung](#implementierung)
-- [Realisierung](#realisierung)
-- [Source-Code](#source-code)
+  - [Realisierung](#realisierung)
+  - [Source-Code](#source-code)
 - [Testing](#testing)
-- [Durchführung-Testcases](#durchführung-testcases)
+  - [Durchführung-Testcases](#durchführung-testcases)
 - [Reflexion (Problemstellungen)](#reflexion-problemstellungen)
 - [Fazit](#fazit)
 
 # Projekt-Auftrag
-Der Projekt Auftrag kann grundsätzlich vom Dokument [ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/01_Allgemein/01_Projektinfos/ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf). 
+Der Projekt Auftrag kann grundsätzlich vom Dokument [ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/01_Allgemein/01_Projektinfos/ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf) entnommen werden. 
 
 Diese Infos wurde aus dem vorhin erwähnten PDF kopiert!
 
@@ -86,17 +86,29 @@ Erforderliche Hardware für Projekt:
 - Druck-Knopf
 
 # Analyse
+Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man für die Realisation braucht.
+
 ## Funktionale-und-nicht-funktionale-Anforderungen
+
+
 ## Signalbeschrieb
+
+
 ## Blockschaltbild
+Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
 
 [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
 ![TinkerCAD](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
 # Design
+
+
 ## Detailschema
+
+
 ## Werte-Zuweisungs-Tabelle
+
 
 ## Program-Ablauf
 Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
@@ -104,14 +116,38 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 ![Struktogramm](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/01_Structorizer/IG1_Structorizer.png)
 
 ## Definierte-Testcases
+|  Test-Case  |  Thema  |  Was?  |  Ergebnis  |
+|--------|--------|--------|--------|
+|  1  |    |    |    |
+|  2  |    |    |    |
+|  3  |    |    |    |
+|  4  |    |    |    |
+|  5  |    |    |    |
+|  6  |    |    |    |
+|    |    |    |    |
+|    |    |    |    |
+
 
 # Implementierung
-# Realisierung
-# Source-Code
+
+
+## Realisierung
+
+
+## Source-Code
+
 
 # Testing
-# Durchführung-Testcases
+
+
+## Durchführung-Testcases
+
+
 # Reflexion (Problemstellungen)
+- LED Streifen
+- Programmsprache C
+- FastLED Library welche nur ging wenn man MKR1000 ausgewählt hat
+
 # Fazit
 
 
