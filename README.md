@@ -92,7 +92,7 @@ Erforderliche Hardware für Projekt:
 
 [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
-![TinkerCAD](../03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
+![TinkerCAD](../IG1_LEDProjekt/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
 # Design
 ## Detailschema
