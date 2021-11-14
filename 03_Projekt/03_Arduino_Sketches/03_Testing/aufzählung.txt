@@ -1,0 +1,2 @@
+for(int z = 0; z < 10; z++){
+pinMode(z, OUTPUT);
