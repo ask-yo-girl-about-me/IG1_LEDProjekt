@@ -6,15 +6,11 @@
 
 void setup() {
    Serial.begin(9600);
-
   while (!Serial);
 
   if (!ENV.begin()) {
-
     Serial.println("Failed to initialize MKR ENV shield!");
-
     while (1);
-    
   }
 }
 
