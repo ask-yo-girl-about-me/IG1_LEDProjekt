@@ -2,8 +2,6 @@
  MKR ENV Shield - Temperature Read Sensor
  */
 
-#include <Arduino_MKRENV.h>
-
 void setup() {
    Serial.begin(9600);
   while (!Serial);
