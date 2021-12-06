@@ -3,8 +3,6 @@
 
 // variables
 float temperature = 0;
-float Tempbereich_G = 24;
-
 
 void setup() {
   Serial.begin(9600);
@@ -28,11 +26,13 @@ void loop() {
   // read the sensors values
   temperature = ENV.readTemperature();
   
-
-if (temperature == Tempbereich_G); {
-    pinMode(0, OUTPUT);
-    digitalWrite(0, HIGH);
-    delay (1000);
-}
-
+  if ( temperature >= 25 && temperature  <= 30 ){
+    digitalWrite(ledPin1, HIGH);
+   }
+  else if ( temperature >= 20 && temperature  <= 25){
+    digitalWrite(ledPin2, HIGH);
+  }
+  else {
+    digitalWrite(ledPin3, HIGH);
+  }
 }
