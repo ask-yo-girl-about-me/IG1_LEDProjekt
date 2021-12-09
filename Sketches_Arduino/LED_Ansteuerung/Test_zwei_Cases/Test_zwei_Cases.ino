@@ -32,7 +32,29 @@ void loop() {
 void doSwitchStatement() {
   switch(selector) {
   case 0:
-    pinMode(0, OUTPUT);
+    //here we are storing the volume value
+    int volume = analogRead(A0);
+    //max value for analog read is 1023 but it must be very very loud to reach this value
+    //so I lower it down in map function to 700
+    //mapping volume value to make it easier to turn LEDs on
+    volume = map(volume, 0, 1200, 0, 10);
+    //for loop to turn on or off all LEDs
+    //thanks to this loop code for this project is very short
+    //we are going through all pins where we have LEDs and checking if the volume is
+    //bigger then pin number (that's why we are maping the volume)
+    for(int a = 0; a < 9; a++){ 
+     if(volume >= a){
+      //if it is bigger we can turn on the LED
+      digitalWrite(a, HIGH);
+      }
+      else{
+      //if it is smaller we can turn the LED off
+      digitalWrite(a, LOW);
+      }
+    }
+  break;
+  case 1:
+   pinMode(0, OUTPUT);
     digitalWrite(0, HIGH);
     delay (1000);
     digitalWrite (0, LOW);
@@ -71,34 +93,7 @@ void doSwitchStatement() {
     pinMode(9, OUTPUT);
     digitalWrite(9, HIGH);
     delay (1000);  
-    digitalWrite (9, LOW);
-  break;
-  case 1:
-    //here we are storing the volume value
-    int volume = analogRead(A0);
-    //max value for analog read is 1023 but it must be very very loud to reach this value
-    //so I lower it down in map function to 700
-    //mapping volume value to make it easier to turn LEDs on
-    volume = map(volume, 0, 1200, 0, 10);
-    //for loop to turn on or off all LEDs
-    //thanks to this loop code for this project is very short
-    //we are going through all pins where we have LEDs and checking if the volume is
-    //bigger then pin number (that's why we are maping the volume)
-    for(int a = 0; a < 9; a++){ 
-    if(volume >= a){
-    //if it is bigger we can turn on the LED
-    digitalWrite(a, HIGH);
-    }else{
-    //if it is smaller we can turn the LED off
-    digitalWrite(a, LOW);
-      }
-    }
-  break;
-  
-  case 2:
-  break;
-  
-  case 3:
+    digitalWrite (9, LOW);  
   }
 }
  
