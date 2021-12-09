@@ -2,7 +2,7 @@ void setup() {
 //here is an input for sound sensor
 pinMode(A0, INPUT);
 //here we are setting up all pins as an outputs for LEDs
-for(int z = 0; z < 9; z++){
+for(int z = 0; z < 10; z++){
 pinMode(z, OUTPUT);
 }
 }
@@ -17,7 +17,7 @@ volume = map(volume, 0, 1200, 0, 10);
 //thanks to this loop code for this project is very short
 //we are going through all pins where we have LEDs and checking if the volume is
 //bigger then pin number (that's why we are maping the volume)
-for(int a = 0; a < 9; a++){ 
+for(int a = 0; a < 10; a++){ 
  if(volume >= a){
  //if it is bigger we can turn on the LED
  digitalWrite(a, HIGH);
