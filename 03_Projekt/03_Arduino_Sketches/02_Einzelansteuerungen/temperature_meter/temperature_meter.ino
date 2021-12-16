@@ -1,6 +1,9 @@
 #include <Arduino_MKRENV.h>
 #include <SPI.h>
 
+int 
+
+
 // variables
 float temperature = 0;
 
@@ -26,13 +29,13 @@ void loop() {
   // read the sensors values
   temperature = ENV.readTemperature();
   
-  if ( temperature >= 25 && temperature  <= 30 ){
-    digitalWrite(ledPin1, HIGH);
+  if ( temperature >= 27){
+    digitalWrite(ledgr, HIGH);
    }
-  else if ( temperature >= 20 && temperature  <= 25){
-    digitalWrite(ledPin2, HIGH);
+  else if ( temperature <=27){
+    digitalWrite(ledge, HIGH);
   }
-  else {
-    digitalWrite(ledPin3, HIGH);
+  else { ( temperature <=30)
+    digitalWrite(ledre, HIGH);
   }
 }
