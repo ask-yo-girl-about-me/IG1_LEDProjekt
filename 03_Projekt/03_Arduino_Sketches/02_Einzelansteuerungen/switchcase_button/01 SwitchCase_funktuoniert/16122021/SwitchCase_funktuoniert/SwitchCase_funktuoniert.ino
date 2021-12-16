@@ -26,23 +26,12 @@ void setup(){
   pinMode(5, OUTPUT);
   digitalWrite(5, HIGH); 
   delay (1000);
-  digitalWrite (5, LOW); 
-  pinMode(13, OUTPUT);
-  digitalWrite(13, HIGH);  
+  digitalWrite (5, LOW);
+  pinMode(6, OUTPUT);
+  digitalWrite(6, HIGH); 
   delay (1000);
-  digitalWrite (13, LOW);
-  pinMode(14, OUTPUT);
-  digitalWrite(14, HIGH);  
-  delay (1000);
-  digitalWrite (14, LOW);
-  pinMode(8, OUTPUT);
-  digitalWrite(8, HIGH);  
-  delay (1000);
-  digitalWrite (8, LOW);
-  pinMode(9, OUTPUT);
-  digitalWrite(9, HIGH);
-  delay (1000);  
-  digitalWrite (9, LOW);
+  digitalWrite (6, LOW); 
+ 
   Serial.begin(115200);
   pinMode(button, INPUT_PULLUP);
 }
