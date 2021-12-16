@@ -21,8 +21,8 @@ void led() {
  if (sig>800) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
  if (sig>1200) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
  if (sig>16000) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
- if (sig>30000) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
- if (sig>40000) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
+ if (sig>50000) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
+ if (sig>100000) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
 }
 
 void loop() {
