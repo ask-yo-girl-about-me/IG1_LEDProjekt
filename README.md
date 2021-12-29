@@ -23,10 +23,14 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
 - [Implementierung](#implementierung)
   - [Realisierung](#realisierung)
   - [Source-Code](#source-code)
+  - [>- *Der Source Code ist nachvollziehbar kommentiertVerwendete Quellen sind deklariert*](#--der-source-code-ist-nachvollziehbar-kommentiertverwendete-quellen-sind-deklariert)
 - [Testing](#testing)
   - [Durchführung-Testcases](#durchführung-testcases)
+- [Road to Goal](#road-to-goal)
 - [Reflexion (Problemstellungen)](#reflexion-problemstellungen)
 - [Fazit](#fazit)
+
+---
 
 # Projekt-Auftrag
 Der Projekt Auftrag kann grundsätzlich vom Dokument [ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/01_Allgemein/01_Projektinfos/ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf) entnommen werden. 
@@ -60,6 +64,7 @@ In diesem Projekt soll eine einfache Aufgabenstellung mit einem Microcontroller 
 |    Abgabe Dokumentation    |    23.01.22    |
 |    Schluss-Präsentation    |    27.01.22 oder 03.02.22    |
 
+---
 
 # Projekt Beschrieb
 Der Projekt Beschrieb, basiert auf dem Projekt Antrag. Der Projektbeschrieb wurde durch Herr Schmidli und Herr Götzer erstellt. Dieser wurde durch Herr Jäger abgesegnet und somit per PDF festgehalten. 
@@ -86,10 +91,19 @@ Erforderliche Hardware für Projekt:
 - 2 Rote LED
 - Druck-Knopf
 
+---
+
 # Analyse
 Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man für die Realisation braucht.
 
 ## Funktionale Anforderungen
+
+---
+**Lernziel 1_Analyse 1**
+
+>*"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
+
+---
 
 - Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von gründ auf gelbd und am schluss noch rot.
 
@@ -99,36 +113,90 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Nicht-funktionale Anforderungen
 
-- Die Temperaturmessung kann mindestens von 18° bis 30° gehen. Alles andere ist ohne gewähr.
-- Das Progamm kann mindestens 5 Minuten laufen ohne ausfall (Überhitzen oder Aussetzer) 
+---
+**Lernziel 1_Analyse 1.1**
 
+>*"Es gibt eine Liste mit den nicht-funktionalen Anforderungen"*
 
+---
 
+- Die Temperaturmessung kann Temperaturen von -40 °C und +120 °C aufnehmen. Der Bereich im Programm ist auf den 15° bis 30 ° definiert.
+- Das Progamm kann mindestens 5 Minuten laufen ohne ausfall (Überhitzen oder Aussetzer)
+-  Die jeweiligen Daten werden sobald das jeweilige Programm (entweder DB-Meter oder Temp-Meter) geloggt solange bis das Programm gewechselt wird, SD Karte ausgesteckt wird oder der Arduino beendet wird.
+  
 ## Signalbeschrieb
 
+---
+**Lernziel 1_Analyse 2**
+
+>*Sämtiche Signale an den Ein- und Ausgängen sind vollständig beschrieben: Signalart, Wertebereich, Umwandlungen*
+
+---
 
 ## Blockschaltbild
+
+---
+**Lernziel 1_Analyse 3**
+
+>*"Es liegt ein vollständiges Blockschaltbild (Übersichtsschema) vor"*
+>*"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
+
+---
+
 Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
 
 [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
 ![TinkerCAD](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
+---
+
 # Design
 
 
 ## Detailschema
 
+---
+**Lernziel 2_Design 1**
+
+>*"Es liegt ein vollständiges Detailschema des Prototypen mit Pingranularität vor, d.h. jeder einzelne Pin ist ersichtlich"*
+>*"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
+
+---
 
 ## Werte-Zuweisungs-Tabelle
 
+---
+**Lernziel 2_Design 2**
+
+>*"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
+
+---
 
 ## Program-Ablauf
+
+---
+**Lernziel 2_Design 3**
+
+>*Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
+
+*"Der Programmablauf ist sauber gezeichnet"*
+
+---
+
 Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
 
 ![Struktogramm](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/01_Structorizer/IG1_Structorizer.png)
 
 ## Definierte-Testcases
+
+---
+**Lernziel 2_Design 4**
+
+>*Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor*
+
+---
+
 |  Test-Case  |  Thema  |  Was?  |  Ergebnis  |
 |--------|--------|--------|--------|
 |  1  |    |    |    |
@@ -140,26 +208,73 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 |    |    |    |    |
 |    |    |    |    |
 
+---
 
 # Implementierung
 
 
 ## Realisierung
 
+---
+**Lernziel 3_Implementierung 1**
+
+>- *Schwirigkeitsgrad*
+> *0: einfach, von Vorlage kopiert*
+> *1: einfach, leicht modifiziert und erweitert*
+> *2: anspruchsvoll*
+> *3: komplex*
+>- *Sämtliche funktionalen und nicht-funktionalen Anforderungen werden erfüllt und können demonstriert werden*
+>- *Zweckmässiger, robuster Aufbau*
+
+---
+
 
 ## Source-Code
 
+---
+**Lernziel 3_Implementierung 2-3**
+
+>- *Schwirigkeitsgrad*
+> *0: einfach, kopiert von einem HelloWord Beispiel*
+> *1: einfach, leicht modifiziert und erweitert*
+> *2: mittelschwer (Funktionen, Variablen, Iterationen, Verzweigungen, …)*
+> *3: anspruchsvoll (Register, Interrupts, Umrechnungen, ...)*
+> *4: komplex (json, State Machine, Arrays, ...)*
+>- *Der eigene Code kann Zeile für Zeile erklärt werden*
+>- *Der Source Code ist nachvollziehbar kommentiertVerwendete Quellen sind deklariert*
+---
+
+---
 
 # Testing
 
+---
+**Lernziel 4_Testing 1-2**
+
+>- *Es liegt eine Liste mit Testcases vor, welche auf den funktionalen und nicht-funktionalen Anforderungen basiert*
+>- *Die Testcases sind durchgeführt und die Resultate liegen vor*
+>- *Es liegt eine Tabelle mit folgenden Spalten vor: Nummer, Beschreibung, erwartete Reaktion, Ergebnis, Status*
+>- *Sämtliche Testcases sind in einer Tabelle dokumentiert*
+
+---
 
 ## Durchführung-Testcases
 
+---
+
+# Road to Goal
+
+Schritt für Schritt Text wie wir vorgingen und ans Ziel kamen.
+
+---
 
 # Reflexion (Problemstellungen)
-- LED Streifen
+- Hardware (LED Streifen/ENV Shield)
 - Programmsprache C
 - FastLED Library welche nur ging wenn man MKR1000 ausgewählt hat
+- Haupprogramm Struktur SwitchCase (Technisch nicht möglich)
+
+---
 
 # Fazit
 
