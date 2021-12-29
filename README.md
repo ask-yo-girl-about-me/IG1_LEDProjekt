@@ -91,8 +91,17 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Funktionale Anforderungen
 
+- Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von gründ auf gelbd und am schluss noch rot.
+
+- Der Temperaturmeter zeigt die anhand von grünen, gelben und roten LEDs die Optimale Temperatur an.
+
+- Die Dezibel und Temperatur Daten werden geloggt und in eine CSV Datei auf die internen SD Karte geschrieben.
 
 ## Nicht-funktionale Anforderungen
+
+- Die Temperaturmessung kann mindestens von 18° bis 30° gehen. Alles andere ist ohne gewähr.
+- Das Progamm kann mindestens 5 Minuten laufen ohne ausfall (Überhitzen oder Aussetzer) 
+
 
 
 ## Signalbeschrieb
