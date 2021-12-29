@@ -1,3 +1,4 @@
+#include <Arduino_MKRENV.h>
 #include <SPI.h>
 #include <SD.h>
 
@@ -11,6 +12,12 @@ File dataFile;
 
 void setup() {
   Serial.begin(9600);
+
+  // init the ENV Shield
+  if (!ENV.begin()) {
+    Serial.println("Failed to initialize MKR ENV shield!");
+    while (1);
+  }
   
   // init SPI
   SPI.begin();

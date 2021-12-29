@@ -11,7 +11,8 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
   - [Abgabe der Projektarbeit](#abgabe-der-projektarbeit)
 - [Projekt Beschrieb](#projekt-beschrieb)
 - [Analyse](#analyse)
-  - [Funktionale-und-nicht-funktionale-Anforderungen](#funktionale-und-nicht-funktionale-anforderungen)
+  - [Funktionale Anforderungen](#funktionale-anforderungen)
+  - [Nicht-funktionale Anforderungen](#nicht-funktionale-anforderungen)
   - [Signalbeschrieb](#signalbeschrieb)
   - [Blockschaltbild](#blockschaltbild)
 - [Design](#design)
@@ -88,7 +89,10 @@ Erforderliche Hardware für Projekt:
 # Analyse
 Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man für die Realisation braucht.
 
-## Funktionale-und-nicht-funktionale-Anforderungen
+## Funktionale Anforderungen
+
+
+## Nicht-funktionale Anforderungen
 
 
 ## Signalbeschrieb
