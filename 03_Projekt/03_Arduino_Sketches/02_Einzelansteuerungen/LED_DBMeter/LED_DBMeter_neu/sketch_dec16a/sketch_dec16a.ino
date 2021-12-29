@@ -14,15 +14,15 @@ void setup() {
 }
 
 void led() {
- sig = analogRead(MIC)*50;
+ sig = analogRead(MIC)200;
 
- if (sig>1)  {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
- if (sig>400) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
- if (sig>800) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
- if (sig>1200) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
- if (sig>16000) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
- if (sig>50000) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
- if (sig>100000) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
+ if (sig>60000)  {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
+ if (sig>90000)  {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
+ if (sig>130000) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
+ if (sig>160000) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
+ if (sig>190000) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
+ if (sig>220000) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
+ if (sig>260000) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
 }
 
 void loop() {
