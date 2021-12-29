@@ -14,7 +14,7 @@ void setup() {
 }
 
 void led() {
- sig = analogRead(MIC)*225;
+ sig = analogRead(MIC)*250;
 
  if (sig>60000)  {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
  if (sig>90000)  {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
