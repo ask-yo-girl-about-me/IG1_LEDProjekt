@@ -101,7 +101,7 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 ---
 **Lernziel 1_Analyse 1**
 
->*"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
+>- *"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
 
 ---
 
@@ -118,7 +118,7 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 ---
 **Lernziel 1_Analyse 1.1**
 
->*"Es gibt eine Liste mit den nicht-funktionalen Anforderungen"*
+>- *"Es gibt eine Liste mit den nicht-funktionalen Anforderungen"*
 
 ---
 
@@ -133,7 +133,7 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 ---
 **Lernziel 1_Analyse 2**
 
->*Sämtiche Signale an den Ein- und Ausgängen sind vollständig beschrieben: Signalart, Wertebereich, Umwandlungen*
+>- *Sämtiche Signale an den Ein- und Ausgängen sind vollständig beschrieben: Signalart, Wertebereich, Umwandlungen*
 
 ---
 
@@ -158,8 +158,8 @@ Umwandlung: 0 V LED deaktiviert 3.3 V LED aktiv
 ---
 **Lernziel 1_Analyse 3**
 
->*"Es liegt ein vollständiges Blockschaltbild (Übersichtsschema) vor"*
->*"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
+>- *"Es liegt ein vollständiges Blockschaltbild (Übersichtsschema) vor"*
+>- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
 ---
 
@@ -173,8 +173,8 @@ Umwandlung: 0 V LED deaktiviert 3.3 V LED aktiv
 ---
 **Lernziel 2_Design 1**
 
->*"Es liegt ein vollständiges Detailschema des Prototypen mit Pingranularität vor, d.h. jeder einzelne Pin ist ersichtlich"*
->*"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
+>- *"Es liegt ein vollständiges Detailschema des Prototypen mit Pingranularität vor, d.h. jeder einzelne Pin ist ersichtlich"*
+>- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
 ---
 
@@ -189,7 +189,7 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 ---
 **Lernziel 2_Design 2**
 
->*"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
+>- *"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
 
 ---
 
@@ -209,9 +209,8 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 ---
 **Lernziel 2_Design 3**
 
->*"Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
-
->*"Der Programmablauf ist sauber gezeichnet""*
+>- *"Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
+>- *"Der Programmablauf ist sauber gezeichnet""*
 
 ---
 
@@ -224,7 +223,7 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 ---
 **Lernziel 2_Design 4**
 
->*"Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor"*
+>- *"Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor"*
 
 ---
 
@@ -353,16 +352,31 @@ Testgruppen
 **TG-40**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat  |
 |--------|--------|--------|--------|--------|
-|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Daten enthalten. Zuoberst ein Titel mit beschriftung Dezibel-Value. | |
-|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte. Zuoberst ein Titel mit beschriftung Temperatur-Value.  | |
-|  40-3  |  SD Karte entfernen  | SD Karte währen dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten | |
-|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. | |
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Daten enthalten. Zuoberst ein Titel mit beschriftung Dezibel-Value. |  |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte. Zuoberst ein Titel mit beschriftung Temperatur-Value.  |  |
+|  40-3  |  SD Karte entfernen  | SD Karte währen dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |  |
+|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |  |
 
 ---
 
 # Road to Goal
 
-Schritt für Schritt Text wie wir vorgingen und ans Ziel kamen.
+Als erstes haben wir mal Ideen gesammelt, was wir als Projekt machen können. Im Internet haben wir gesehen, dass man mit dem Arduino LEDs ansteuern kann mit LED Streifen. Somit haben wir dies als Grundbau genommen und sind mit der Idee gekommn einen mit LED Streifen einen Dezibel und Temperatur Meter zu machen. Leider mussten wir dies dann aber durch gewisse Progleme durch einzelne LEDs wechseln. 
+
+Nach dem wir unser Projekt beschrieb fertig hatten, machten wir uns an das Detail-Schema und das Struktogramm. Somit haben wir im TinkerCAD das Detail-Schema so aufgebaut wie wir uns das vorgestellt haben und es so dann auch einfacher haben in echt aufzubauen. Das Struktogramm haben wir per Structorizer gezeichnet und haben uns so schon mal einen grundbau für das Programm erstellt.
+
+Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne. Somit machten wir uns an die ansteuerung der einzelnen Geräten.
+
+1. Einzelne LED ansteuern (Link)[../IG1_LEDProjekt/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Einzeln/LED-Einzeln.ino]
+2. LED Testing (Link)[]
+3. Button funktionalität (Link)[]
+4. Switch Case mit Button (Link)[]
+5. Dezibel auslesen in Seriel Monitor (Link)[]
+6. Temperatur auslesen in Seriel Monitor (Link)[] 
+7. ENV Shuel Infos auf SD Karte schreiben (Link)[]
+8. DB Meter Infos auf SD karte schreiben (Link)[]
+9. Dezibel Meter (Link)[]
+10. Temperatur Meter (Link)[]
 
 ---
 
