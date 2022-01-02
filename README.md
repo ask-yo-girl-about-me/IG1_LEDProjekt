@@ -230,22 +230,42 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 
 Testgruppen
 
-|  Nr.  |  Thema  |  Was?  |  Ergebnis  |
-|--------|--------|--------|--------|
-|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
-|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
-|  TG-30  |  Case Change  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
-|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
+|  Nr.  |  Thema  |  Was?  |
+|--------|--------|--------|
+|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-30  |  Change Case  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
 
 **TG-10**
-|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |  Resultat  | Status |
-|--------|--------|--------|--------|--------|--------|
-|  1  |    |    |    |
-|  2  |    |    |    |
-|  3  |    |    |    |
-|  4  |    |    |    |
-|  5  |    |    |    |
-|  6  |    |    |    |
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
+|--------|--------|--------|--------|
+|  10-1  |  Grüne LEDS  |  Song auf Handy laufen lassen mit 10% lautstärke. | Nur die grüne LEDs sind |
+|  10-2  |  Gelben LEDS  |  Song auf Handy laufen lassen mit 50% lautstärke. | Die grünen und gelben LEDs sind aktiv |
+|  10-3  |  Roten LEDS  |  Song auf Handy laufen lassen mit 100% lautstärke. | Die grünen, gelben und roten LEDs sind aktiv |
+|  10-4  |  Kein Microfon  |  Microfon wird entfernt  |  Keine LEDs sind aktiv | 
+
+**TG-20**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
+|--------|--------|--------|--------|
+|  20-1  |  Grüne LEDs  |  Temperatur auf 25°-27° regulieren | Nur die grüne LEDs sind aktiv |
+|  20-2  |  Gelbe LEDs  |  Temperatur auf 28°-30° regulieren | Die grüne und gelben LEDs sind aktiv |
+|  20-3  |  Roten LEDs  |  Temperatur auf 31° und mehr regulieren | Die grüne. gelben und roten LEDs sind aktiv |
+
+**TG-30**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
+|--------|--------|--------|--------|
+|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (DB meter) |
+|  30-2  | In das zweite Programm wechseln   | Nach dem Programm Start Knopf zwei Mal drücken und wenn man im Case 1 ist nur einmal | 2 Case läuft durch (DB meter)
+|  30-3  |  Überschreiten der Case Nummer  | Knopf mehr als 2 mal drücken  | Da wir nur 2 Cases haben,ist beim 3 mal drücken das Programm fertig |
+
+**TG-40**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
+|--------|--------|--------|--------|
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Daten enthalten. Zuoberst ein Titel mit beschriftung Dezibel-Value. |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte. Zuoberst ein Titel mit beschriftung Temperatur-Value.  |
+|  40-3  |  SD Karte entfernen  | SD Karte währen dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |
+|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |
 
 ---
 
@@ -298,6 +318,45 @@ Testgruppen
 ---
 
 ## Durchführung-Testcases
+
+Testgruppen
+
+|  Nr.  |  Thema  |  Was?  |  Resultat  |
+|--------|--------|--------|--------|
+|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |  |
+|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |   |
+|  TG-30  |  Change Case  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
+|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |   |
+
+**TG-10**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
+|--------|--------|--------|--------|--------|
+|  10-1  |  Grüne LEDS  |  Song auf Handy laufen lassen mit 10% lautstärke. | Nur die grüne LEDs sind |   |
+|  10-2  |  Gelben LEDS  |  Song auf Handy laufen lassen mit 50% lautstärke. | Die grünen und gelben LEDs sind aktiv |   |
+|  10-3  |  Roten LEDS  |  Song auf Handy laufen lassen mit 100% lautstärke. | Die grünen, gelben und roten LEDs sind aktiv | |
+|  10-4  |  Kein Microfon  |  Microfon wird entfernt  |  Keine LEDs sind aktiv |  |
+
+**TG-20**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
+|--------|--------|--------|--------|--------|--------|
+|  20-1  |  Grüne LEDs  |  Temperatur auf 25°-27° regulieren | Nur die grüne LEDs sind aktiv | |
+|  20-2  |  Gelbe LEDs  |  Temperatur auf 28°-30° regulieren | Die grüne und gelben LEDs sind aktiv | |
+|  20-3  |  Roten LEDs  |  Temperatur auf 31° und mehr regulieren | Die grüne. gelben und roten LEDs sind aktiv | |
+
+**TG-30**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
+|--------|--------|--------|--------|--------|
+|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (DB meter) | |
+|  30-2  | In das zweite Programm wechseln   | Nach dem Programm Start Knopf zwei Mal drücken und wenn man im Case 1 ist nur einmal | 2 Case läuft durch (DB meter)|  |
+|  30-3  |  Überschreiten der Case Nummer  | Knopf mehr als 2 mal drücken  | Da wir nur 2 Cases haben,ist beim 3 mal drücken das Programm fertig |  |
+
+**TG-40**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat  |
+|--------|--------|--------|--------|--------|
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Daten enthalten. Zuoberst ein Titel mit beschriftung Dezibel-Value. | |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte. Zuoberst ein Titel mit beschriftung Temperatur-Value.  | |
+|  40-3  |  SD Karte entfernen  | SD Karte währen dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten | |
+|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. | |
 
 ---
 
