@@ -228,16 +228,14 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 
 ---
 
-|  Test-Case  |  Thema  |  Was?  |  Ergebnis  |
+Testgruppen
+
+|  Nr.  |  Thema  |  Was?  |  Ergebnis  |
 |--------|--------|--------|--------|
-|  1  |    |    |    |
-|  2  |    |    |    |
-|  3  |    |    |    |
-|  4  |    |    |    |
-|  5  |    |    |    |
-|  6  |    |    |    |
-|    |    |    |    |
-|    |    |    |    |
+|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
+|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
+|  TG-30  |  Case Change  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
+|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
 
 ---
 
