@@ -105,11 +105,13 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
-- Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von gründ auf gelbd und am schluss noch rot.
+- Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von grün auf gelb und am schluss noch rot.
 
-- Der Temperaturmeter zeigt die anhand von grünen, gelben und roten LEDs die Optimale Temperatur an.
+- Der Temperaturmeter zeigt die anhand von grünen, gelben und roten LEDs die Optimale Temperatur an. 25°-27° ist grün, 28°-30° ist gelb und alles über 30° ist rot.
 
 - Die Dezibel und Temperatur Daten werden geloggt und in eine CSV Datei auf die internen SD Karte geschrieben.
+
+- Per Knopfdruck kann man von einen ersten programm in das zweite wechseln.
 
 ## Nicht-funktionale Anforderungen
 
@@ -120,8 +122,10 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
-- Die Temperaturmessung kann Temperaturen von -40 °C und +120 °C aufnehmen. Der Bereich im Programm ist auf den 15° bis 30 ° definiert.
+- Die Temperaturmessung kann Temperaturen von -40 °C und +120 °C aufnehmen. Der Bereich im Programm ist auf 15° bis 30 ° definiert.
+  
 - Das Progamm kann mindestens 5 Minuten laufen ohne ausfall (Überhitzen oder Aussetzer)
+  
 -  Die jeweiligen Daten werden sobald das jeweilige Programm (entweder DB-Meter oder Temp-Meter) geloggt solange bis das Programm gewechselt wird, SD Karte ausgesteckt wird oder der Arduino beendet wird.
   
 ## Signalbeschrieb
@@ -133,6 +137,22 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
+**Schalter am Eingang**
+Signalart: Gleichspannung
+Wertebereich: 0 V oder 3.3 V
+Umwandlung: 0 V entspricht keiner Funktion und 3.3 V entspricht change case
+ 
+**Mikrofon am Eingang**
+Signalart: Wechselspannung (das Mik wandelt Schalldruck in Wechselspannung um)
+Wertebereich: zwischen 0 V und 3.3 V sind alle Werte möglich
+Umwandlung: z.B. 70 dB SPL entsprechen 1.2 V AC und bedeutet im Programm, dass die grüne LED leuchtet
+
+**LED am Ausgang**
+Signalart: Gleichspannung
+Wertebereich: zwischen 0 und 3.3 V
+Umwandlung: 0 V LED deaktiviert 3.3 V LED aktiv
+
+
 ## Blockschaltbild
 
 ---
@@ -142,12 +162,6 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 >*"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
 ---
-
-Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
-
-[TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
-
-![TinkerCAD](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
 ---
 
@@ -164,6 +178,12 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ---
 
+Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
+
+[TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
+
+![TinkerCAD](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
+
 ## Werte-Zuweisungs-Tabelle
 
 ---
@@ -173,14 +193,25 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ---
 
+|  Werte  |  -  |  -  |  -  |
+|--------|--------|--------|--------|
+|  1  |    |    |    |
+|  2  |    |    |    |
+|  3  |    |    |    |
+|  4  |    |    |    |
+|  5  |    |    |    |
+|  6  |    |    |    |
+|    |    |    |    |
+|    |    |    |    |
+
 ## Program-Ablauf
 
 ---
 **Lernziel 2_Design 3**
 
->*Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
+>*"Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
 
-*"Der Programmablauf ist sauber gezeichnet"*
+>*"Der Programmablauf ist sauber gezeichnet""*
 
 ---
 
@@ -193,7 +224,7 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 ---
 **Lernziel 2_Design 4**
 
->*Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor*
+>*"Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor"*
 
 ---
 
