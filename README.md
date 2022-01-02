@@ -237,6 +237,16 @@ Testgruppen
 |  TG-30  |  Case Change  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
 |  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
 
+**TG-10**
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |  Resultat  | Status |
+|--------|--------|--------|--------|--------|--------|
+|  1  |    |    |    |
+|  2  |    |    |    |
+|  3  |    |    |    |
+|  4  |    |    |    |
+|  5  |    |    |    |
+|  6  |    |    |    |
+
 ---
 
 # Implementierung
