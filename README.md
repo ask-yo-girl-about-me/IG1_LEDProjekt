@@ -367,7 +367,7 @@ Nach dem wir unser Projekt beschrieb fertig hatten, machten wir uns an das Detai
 
 Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne. Somit machten wir uns an die ansteuerung der einzelnen Geräten.
 
-1. Einzelne LED ansteuern (Link)[../IG1_LEDProjekt/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Einzeln/LED-Einzeln.ino]
+1. Einzelne LED ansteuern (Link)[https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Einzeln/LED-Einzeln.ino]
 2. LED Testing (Link)[]
 3. Button funktionalität (Link)[]
 4. Switch Case mit Button (Link)[]
