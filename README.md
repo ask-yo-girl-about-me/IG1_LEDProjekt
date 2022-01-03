@@ -138,25 +138,22 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 ---
 
 **Schalter am Eingang**
-Signalart: Gleichspannung
 
-Wertebereich: 0 V oder 3.3 V
-
-Umwandlung: 0 V entspricht keiner Funktion und 3.3 V entspricht change case
+- Signalart: Gleichspannung
+- Wertebereich: 0 V oder 3.3 V
+- Umwandlung: 0 V entspricht keiner Funktion und 3.3 V entspricht change case
  
 **Mikrofon am Eingang**
-Signalart: Wechselspannung (das Mik wandelt Schalldruck in Wechselspannung um)
 
-Wertebereich: zwischen 0 V und 3.3 V sind alle Werte möglich
-
-Umwandlung: z.B. 70 dB SPL entsprechen 1.2 V AC und bedeutet im Programm, dass die grüne LED leuchtet
+- Signalart: Wechselspannung (das Mik wandelt Schalldruck in Wechselspannung um)
+- Wertebereich: zwischen 0 V und 3.3 V sind alle Werte möglich
+- Umwandlung: z.B. 70 dB SPL entsprechen 1.2 V AC und bedeutet im Programm, dass die grüne LED leuchtet
 
 **LED am Ausgang**
-Signalart: Gleichspannung
 
-Wertebereich: zwischen 0 und 3.3 V
-
-Umwandlung: 0 V LED deaktiviert 3.3 V LED aktiv
+- Signalart: Gleichspannung
+- Wertebereich: zwischen 0 und 3.3 V
+- Umwandlung: 0 V LED deaktiviert 3.3 V LED aktiv
 
 ## Blockschaltbild
 
