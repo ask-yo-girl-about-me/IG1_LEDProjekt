@@ -390,15 +390,15 @@ Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenf
 
 ![Flashback1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/1.jpg)
 
-![Flashback2](../00_img/Flashbacks/2.jpg)
+![Flashback2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/2.jpg)
 
-![Flashback3](../00_img/Flashbacks/3.0.jpg)
+![Flashback3](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.0.jpg)
 
-![Flashback4](../00_img/Flashbacks/3.1.jpg)
+![Flashback4](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.1.jpg)
 
-![Flashback5](../00_img/Flashbacks/3.2.jpg)
+![Flashback5](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.2.jpg)
 
-![Flashback6](../00_img/Flashbacks/4.MP4)
+![Flashback6](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.mp4)
 
 ---
 
