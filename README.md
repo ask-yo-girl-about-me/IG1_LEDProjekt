@@ -388,7 +388,7 @@ Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenf
 
 ## Flashbacks
 
-![Flashback1](../00_img/Flashbacks/1.jpg)
+![Flashback1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/1.jpg)
 
 ![Flashback2](../00_img/Flashbacks/2.jpg)
 
