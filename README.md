@@ -388,15 +388,34 @@ Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenf
 
 ## Flashbacks
 
+Hier werden einige Flashbacks aufgezeigt, welche eine Wichtige Rolle in dem ganzen Projekt gespielt haben. 
+Die anten kann man sogar als Milestones anschauen.
+
+**Flashback 1**
+
+Das erste mal den Arduino auf der Steckerplatine mit den LEDs verbunden. Dies war das erste erfolgserlebniss von uns beiden. Wir natürlich zuerst die LEDs einmal austesten und schauen wie diese funktionieren.
+
 ![Flashback1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/1.jpg)
+
+**Flashback 2**
+
+
 
 ![Flashback2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/2.jpg)
 
+**Flashback 3**
+
+
+
 ![Flashback3](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.0.jpg)
 
-![Flashback4](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.1.jpg)
+![Flashback3.1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.1.jpg)
 
-![Flashback5](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.2.jpg)
+![Flashback3.2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.2.jpg)
+
+**Flashback 4**
+
+
 
 [Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.mp4)
 
