@@ -27,6 +27,8 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
 - [Testing](#testing)
   - [Durchführung-Testcases](#durchführung-testcases)
 - [Road to Goal](#road-to-goal)
+  - [Geschichte](#geschichte)
+  - [Flashbacks](#flashbacks)
 - [Reflexion (Problemstellungen)](#reflexion-problemstellungen)
 - [Fazit](#fazit)
 
@@ -363,6 +365,8 @@ Testgruppen
 
 # Road to Goal
 
+## Geschichte
+
 Als erstes haben wir mal Ideen gesammelt, was wir als Projekt machen können. Im Internet haben wir gesehen, dass man mit dem Arduino LEDs ansteuern kann mit LED Streifen. Somit haben wir dies als Grundbau genommen und sind mit der Idee gekommn einen mit LED Streifen einen Dezibel und Temperatur Meter zu machen. Leider mussten wir dies dann aber durch gewisse Progleme durch einzelne LEDs wechseln. 
 
 Nach dem wir unser Projekt beschrieb fertig hatten, machten wir uns an das Detail-Schema und das Struktogramm. Somit haben wir im TinkerCAD das Detail-Schema so aufgebaut wie wir uns das vorgestellt haben und es so dann auch einfacher haben in echt aufzubauen. Das Struktogramm haben wir per Structorizer gezeichnet und haben uns so schon mal einen grundbau für das Programm erstellt.
@@ -381,6 +385,20 @@ Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne
 10. Temperatur Meter [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-TempMeter/LED-TempMeter.ino)
 
 Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenführen aller Programme, damit diese in einem einzenlnen Programm tangiert.
+
+## Flashbacks
+
+![Flashback1](../IG1_LEDProjekt/00_img/Flashbacks/1.HEIC)
+
+![Flashback2](../IG1_LEDProjekt/00_img/Flashbacks/2.HEIC)
+
+![Flashback3](../IG1_LEDProjekt/00_img/Flashbacks/3.0.HEIC)
+
+![Flashback4](../IG1_LEDProjekt/00_img/Flashbacks/3.1.HEIC)
+
+![Flashback5](../IG1_LEDProjekt/00_img/Flashbacks/3.2.HEIC)
+
+![Flashback6](../IG1_LEDProjekt/00_img/Flashbacks/4.MP4)
 
 ---
 
