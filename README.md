@@ -398,7 +398,9 @@ Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenf
 
 ![Flashback5](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.2.jpg)
 
-![Flashback6](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.mp4)
+[Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.mp4)
+
+
 
 ---
 
