@@ -388,15 +388,15 @@ Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenf
 
 ## Flashbacks
 
-![Flashback1](../IG1_LEDProjekt/00_img/Flashbacks/1.HEIC)
+![Flashback1](../IG1_LEDProjekt/00_img/Flashbacks/1.jpg)
 
-![Flashback2](../IG1_LEDProjekt/00_img/Flashbacks/2.HEIC)
+![Flashback2](../IG1_LEDProjekt/00_img/Flashbacks/2.jpg)
 
-![Flashback3](../IG1_LEDProjekt/00_img/Flashbacks/3.0.HEIC)
+![Flashback3](../IG1_LEDProjekt/00_img/Flashbacks/3.0.jpg)
 
-![Flashback4](../IG1_LEDProjekt/00_img/Flashbacks/3.1.HEIC)
+![Flashback4](../IG1_LEDProjekt/00_img/Flashbacks/3.1.jpg)
 
-![Flashback5](../IG1_LEDProjekt/00_img/Flashbacks/3.2.HEIC)
+![Flashback5](../IG1_LEDProjekt/00_img/Flashbacks/3.2.jpg)
 
 ![Flashback6](../IG1_LEDProjekt/00_img/Flashbacks/4.MP4)
 
