@@ -29,12 +29,12 @@ void led() {
   // print an empty line
 
   Serial.println();
-
- if (temperature>22.00)  {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
+ if (temperature<19.99)  {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
+ if (temperature>20.00)  {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
  if (temperature>25.00)  {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
- if (temperature>26.00)  {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
+ if (temperature>27.00)  {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
  if (temperature>29.00) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
- if (temperature>30.00) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
+ if (temperature>31.00) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
  if (temperature>35.00) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
 }
 
