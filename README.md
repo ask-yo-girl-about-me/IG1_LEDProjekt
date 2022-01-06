@@ -23,7 +23,6 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
 - [Implementierung](#implementierung)
   - [Realisierung](#realisierung)
   - [Source-Code](#source-code)
-  - [>- *Der Source Code ist nachvollziehbar kommentiertVerwendete Quellen sind deklariert*](#--der-source-code-ist-nachvollziehbar-kommentiertverwendete-quellen-sind-deklariert)
 - [Testing](#testing)
   - [Durchführung-Testcases](#durchführung-testcases)
 - [Road to Goal](#road-to-goal)
@@ -100,12 +99,9 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Funktionale Anforderungen
 
----
 **Lernziel 1_Analyse 1**
 
 >- *"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
-
----
 
 - Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von grün auf gelb und am schluss noch rot.
 
@@ -117,12 +113,10 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Nicht-funktionale Anforderungen
 
----
 **Lernziel 1_Analyse 1.1**
 
 >- *"Es gibt eine Liste mit den nicht-funktionalen Anforderungen"*
 
----
 
 - Die Temperaturmessung kann Temperaturen von -40 °C und +120 °C aufnehmen. Der Bereich im Programm ist auf 15° bis 30 ° definiert.
   
@@ -132,12 +126,9 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
   
 ## Signalbeschrieb
 
----
 **Lernziel 1_Analyse 2**
 
 >- *Sämtiche Signale an den Ein- und Ausgängen sind vollständig beschrieben: Signalart, Wertebereich, Umwandlungen*
-
----
 
 **1. Schalter am Eingang**
 
@@ -172,13 +163,10 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Blockschaltbild
 
----
 **Lernziel 1_Analyse 3**
 
 >- *"Es liegt ein vollständiges Blockschaltbild (Übersichtsschema) vor"*
 >- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
-
----
 
 ![Blockschaltbild](/00_img/Projekt/blockschaltbild.png)
 
@@ -189,13 +177,11 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Detailschema
 
----
 **Lernziel 2_Design 1**
 
 >- *"Es liegt ein vollständiges Detailschema des Prototypen mit Pingranularität vor, d.h. jeder einzelne Pin ist ersichtlich"*
 >- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
----
 
 Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
 
@@ -205,12 +191,9 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ## Werte-Zuweisungs-Tabelle
 
----
 **Lernziel 2_Design 2**
 
 >- *"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
-
----
 
 |  MIC   |   PIN A0    |  10Bit |Ausgang |
 |--------|--------|--------|--------|
@@ -237,13 +220,10 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ## Program-Ablauf
 
----
 **Lernziel 2_Design 3**
 
 >- *"Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
 >- *"Der Programmablauf ist sauber gezeichnet""*
-
----
 
 Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
 
@@ -251,12 +231,10 @@ Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Abl
 
 ## Definierte-Testcases
 
----
 **Lernziel 2_Design 4**
 
 >- *"Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor"*
 
----
 
 Testgruppen
 
@@ -320,7 +298,6 @@ Testgruppen
 
 ## Source-Code
 
----
 **Lernziel 3_Implementierung 2-3**
 
 >- *Schwirigkeitsgrad*
@@ -331,21 +308,18 @@ Testgruppen
 > *4: komplex (json, State Machine, Arrays, ...)*
 >- *Der eigene Code kann Zeile für Zeile erklärt werden*
 >- *Der Source Code ist nachvollziehbar kommentiertVerwendete Quellen sind deklariert*
----
 
 ---
 
 # Testing
 
----
+
 **Lernziel 4_Testing 1-2**
 
 >- *Es liegt eine Liste mit Testcases vor, welche auf den funktionalen und nicht-funktionalen Anforderungen basiert*
 >- *Die Testcases sind durchgeführt und die Resultate liegen vor*
 >- *Es liegt eine Tabelle mit folgenden Spalten vor: Nummer, Beschreibung, erwartete Reaktion, Ergebnis, Status*
 >- *Sämtliche Testcases sind in einer Tabelle dokumentiert*
-
----
 
 ## Durchführung-Testcases
 
