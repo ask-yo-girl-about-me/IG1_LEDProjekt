@@ -341,7 +341,7 @@ Testgruppen
 
 **TG-20**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
-|--------|--------|--------|--------|--------|--------|
+|--------|--------|--------|--------|--------|
 |  20-1  |  Grüne LEDs  |  Temperatur auf 25°-27° regulieren | Nur die grüne LEDs sind aktiv | |
 |  20-2  |  Gelbe LEDs  |  Temperatur auf 28°-30° regulieren | Die grüne und gelben LEDs sind aktiv | |
 |  20-3  |  Roten LEDs  |  Temperatur auf 31° und mehr regulieren | Die grüne. gelben und roten LEDs sind aktiv | |
