@@ -167,6 +167,8 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
+![Blockschaltbild](..\00_img/Projekt/blockschaltbild.png)
+
 ---
 
 # Design
@@ -197,16 +199,37 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ---
 
-|  Werte  |  -  |  -  |  -  |
+|  PIN  |  -  |  -  |  -  |
 |--------|--------|--------|--------|
-|  1  |    |    |    |
-|  2  |    |    |    |
-|  3  |    |    |    |
-|  4  |    |    |    |
-|  5  |    |    |    |
-|  6  |    |    |    |
-|    |    |    |    |
-|    |    |    |    |
+|  AREF  |    |    |    |
+|  A0 |    |    |    |
+|  A1 |    |    |    |
+|  A2 |    |    |    |
+|  A3 |    |    |    |
+|  A4 |    |    |    |
+|  A5 |    |    |    |
+|  A6 |    |    |    |
+|  D0   |    |    |    |
+|  D1   |    |    |    |
+|  D2   |    |    |    |
+|  D3   |    |    |    |
+|  D4   |    |    |    |
+|  D5   |    |    |    |
+|  D6   |    |    |    |
+|  D7   |    |    |    |
+|  D8   |    |    |    |
+|  D9   |    |    |    |
+|  D10   |    |    |    |
+|  D11   |    |    |    |
+|  D12   |    |    |    |
+|  D13   |    |    |    |
+|  D14   |    |    |    |
+|  RESET   |    |    |    |
+|  GND   |    |    |    |
+|  +3V3   |    |    |    |
+|  VIN   |    |    |    |
+|  +5V   |    |    |    |
+
 
 ## Program-Ablauf
 
