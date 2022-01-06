@@ -167,7 +167,7 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
-![Blockschaltbild](../00_img/Projekt/blockschaltbild.jpeg)
+![Blockschaltbild](../00_img/Projekt/blockschaltbild.jpg)
 
 ---
 
