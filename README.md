@@ -188,7 +188,7 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
-![TinkerCAD](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
+![TinkerCAD](03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
 ## Werte-Zuweisungs-Tabelle
 
@@ -243,7 +243,7 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
 
-![Struktogramm](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/01_Structorizer/IG1_Structorizer.png)
+![Struktogramm](03_Projekt/01_Structorizer/IG1_Structorizer.png)
 
 ## Definierte-Testcases
 
@@ -418,29 +418,29 @@ Die anten kann man sogar als Milestones anschauen.
 
 Das erste mal den Arduino auf der Steckerplatine mit den LEDs verbunden. Dies war das erste erfolgserlebniss von uns beiden. Wir natürlich zuerst die LEDs einmal austesten und schauen wie diese funktionieren.
 
-![Flashback1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/1.jpg)
+![Flashback1](00_img/Flashbacks/1.jpg)
 
 **Flashback 2**
 
 
 
-![Flashback2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/2.jpg)
+![Flashback2](00_img/Flashbacks/2.jpg)
 
 **Flashback 3**
 
 
 
-![Flashback3](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.0.jpg)
+![Flashback3](00_img/Flashbacks/3.0.jpg)
 
-![Flashback3.1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.1.jpg)
+![Flashback3.1](00_img/Flashbacks/3.1.jpg)
 
-![Flashback3.2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.2.jpg)
+![Flashback3.2](00_img/Flashbacks/3.2.jpg)
 
 **Flashback 4**
 
 
 
-[Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.mp4)
+[Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
 
 
 
