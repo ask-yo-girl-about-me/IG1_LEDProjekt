@@ -167,7 +167,7 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
-![Blockschaltbild](/00_img/Projekt/blockschaltbild.jpg)
+![Blockschaltbild](/00_img/Projekt/blockschaltbild.png)
 
 ---
 
@@ -199,36 +199,26 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ---
 
-|  PIN  |  -  |  -  |  -  |
+|  MIC   |  A0    |  10Bit |Ausgang |
 |--------|--------|--------|--------|
-|  AREF  |    |    |    |
-|  A0 |    |    |    |
-|  A1 |    |    |    |
-|  A2 |    |    |    |
-|  A3 |    |    |    |
-|  A4 |    |    |    |
-|  A5 |    |    |    |
-|  A6 |    |    |    |
-|  D0   |    |    |    |
-|  D1   |    |    |    |
-|  D2   |    |    |    |
-|  D3   |    |    |    |
-|  D4   |    |    |    |
-|  D5   |    |    |    |
-|  D6   |    |    |    |
-|  D7   |    |    |    |
-|  D8   |    |    |    |
-|  D9   |    |    |    |
-|  D10   |    |    |    |
-|  D11   |    |    |    |
-|  D12   |    |    |    |
-|  D13   |    |    |    |
-|  D14   |    |    |    |
-|  RESET   |    |    |    |
-|  GND   |    |    |    |
-|  +3V3   |    |    |    |
-|  VIN   |    |    |    |
-|  +5V   |    |    |    |
+|   dB   |   -    |    10000    |    LED Grün Pin 0    |
+|   dB   |   -    |    10000    |    LED Grün Pin 1    |
+|   dB   |   -    |    10000    |    LED Gelb Pin 2    |
+|   dB   |   -    |    10000    |    LED Gelb Pin 3    |
+|   dB   |   -    |    10000    |    LED Rot Pin 4     |
+|   dB   |   -    |    10000    |    LED Rot Pin 5     |
+|   dB   |   -    |    10000    |    LED Blau Pin 6    |
+
+| Button |    8   |  Programm |
+|--------|--------|--------|
+|   0     |        |    Programm 1    |
+|   1     |        |    Programm 2    |
+|   1     |        |    Programm 3    |
+
+| LED    |  0-6   |Ausgang |
+|--------|--------|--------|
+|        |        |        |
+
 
 
 ## Program-Ablauf
