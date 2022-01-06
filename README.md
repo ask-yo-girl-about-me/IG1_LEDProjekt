@@ -23,7 +23,6 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
 - [Implementierung](#implementierung)
   - [Realisierung](#realisierung)
   - [Source-Code](#source-code)
-  - [>- *Der Source Code ist nachvollziehbar kommentiertVerwendete Quellen sind deklariert*](#--der-source-code-ist-nachvollziehbar-kommentiertverwendete-quellen-sind-deklariert)
 - [Testing](#testing)
   - [Durchführung-Testcases](#durchführung-testcases)
 - [Road to Goal](#road-to-goal)
@@ -100,12 +99,9 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Funktionale Anforderungen
 
----
 **Lernziel 1_Analyse 1**
 
 >- *"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
-
----
 
 - Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von grün auf gelb und am schluss noch rot.
 
@@ -117,12 +113,10 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Nicht-funktionale Anforderungen
 
----
 **Lernziel 1_Analyse 1.1**
 
 >- *"Es gibt eine Liste mit den nicht-funktionalen Anforderungen"*
 
----
 
 - Die Temperaturmessung kann Temperaturen von -40 °C und +120 °C aufnehmen. Der Bereich im Programm ist auf 15° bis 30 ° definiert.
   
@@ -132,26 +126,36 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
   
 ## Signalbeschrieb
 
----
 **Lernziel 1_Analyse 2**
 
 >- *Sämtiche Signale an den Ein- und Ausgängen sind vollständig beschrieben: Signalart, Wertebereich, Umwandlungen*
 
----
-
-**Schalter am Eingang**
+**1. Schalter am Eingang**
 
 - Signalart: Gleichspannung
 - Wertebereich: 0 V oder 3.3 V
 - Umwandlung: 0 V entspricht keiner Funktion und 3.3 V entspricht change case
  
-**Mikrofon am Eingang**
+**2. Mikrofon am Eingang**
 
 - Signalart: Wechselspannung (das Mik wandelt Schalldruck in Wechselspannung um)
 - Wertebereich: zwischen 0 V und 3.3 V sind alle Werte möglich
 - Umwandlung: z.B. 70 dB SPL entsprechen 1.2 V AC und bedeutet im Programm, dass die grüne LED leuchtet
 
-**LED am Ausgang**
+**Specifications**
+
+|Item|Value|
+|-----|------|
+|Operating Voltage Range| 3.3/5 V |
+|Operating Current(Vcc=5V)|4~5 mA|
+|Voltage Gain(V=6V, f=1kHz)|26 dB|
+|Microphone sensitivity(1kHz)|52-48 dB|
+|Microphone Impedance|2.2k Ohm|
+|Microphone Frequency|16-20 kHz|
+|Microphone S/N Radio|54 dB|
+
+
+**3. LED am Ausgang**
 
 - Signalart: Gleichspannung
 - Wertebereich: zwischen 0 und 3.3 V
@@ -159,13 +163,12 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Blockschaltbild
 
----
 **Lernziel 1_Analyse 3**
 
 >- *"Es liegt ein vollständiges Blockschaltbild (Übersichtsschema) vor"*
 >- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
----
+![Blockschaltbild](/00_img/Projekt/blockschaltbild.png)
 
 ---
 
@@ -174,62 +177,64 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ## Detailschema
 
----
 **Lernziel 2_Design 1**
 
 >- *"Es liegt ein vollständiges Detailschema des Prototypen mit Pingranularität vor, d.h. jeder einzelne Pin ist ersichtlich"*
 >- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
----
 
 Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
 
 [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
-![TinkerCAD](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
+![TinkerCAD](03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
 
 ## Werte-Zuweisungs-Tabelle
 
----
 **Lernziel 2_Design 2**
 
 >- *"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
 
----
-
-|  Werte  |  -  |  -  |  -  |
+|  MIC   |   PIN A0    |  10Bit |Ausgang |
 |--------|--------|--------|--------|
-|  1  |    |    |    |
-|  2  |    |    |    |
-|  3  |    |    |    |
-|  4  |    |    |    |
-|  5  |    |    |    |
-|  6  |    |    |    |
-|    |    |    |    |
-|    |    |    |    |
+|   dB   |   -    |    10000    |    LED Grün Pin 0    |
+|   dB   |   -    |    10000    |    LED Grün Pin 1    |
+|   dB   |   -    |    10000    |    LED Gelb Pin 2    |
+|   dB   |   -    |    10000    |    LED Gelb Pin 3    |
+|   dB   |   -    |    10000    |    LED Rot Pin 4     |
+|   dB   |   -    |    10000    |    LED Rot Pin 5     |
+|   dB   |   -    |    10000    |    LED Blau Pin 6    |
+
+| Button |   PIN 8   |  Programm |
+|--------|--------|--------|
+|   0     |        |    Programm 1    |
+|   1     |        |    Programm 2    |
+|   1     |        |    Programm 3    |
+
+| LED    | PIN 0-6   |Ausgang |
+|--------|--------|--------|
+|   0     |        |    Nicht aktiv    |
+|   1     |        |    Aktiv    |
+
+
 
 ## Program-Ablauf
 
----
 **Lernziel 2_Design 3**
 
 >- *"Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
 >- *"Der Programmablauf ist sauber gezeichnet""*
 
----
-
 Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
 
-![Struktogramm](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/01_Structorizer/IG1_Structorizer.png)
+![Struktogramm](03_Projekt/01_Structorizer/IG1_Structorizer.png)
 
 ## Definierte-Testcases
 
----
 **Lernziel 2_Design 4**
 
 >- *"Es liegt eine Liste mit sämtlichen Testcases, basierend auf den funktionalen und nicht-funktionalen Anforderungen, vor"*
 
----
 
 Testgruppen
 
@@ -293,7 +298,6 @@ Testgruppen
 
 ## Source-Code
 
----
 **Lernziel 3_Implementierung 2-3**
 
 >- *Schwirigkeitsgrad*
@@ -304,21 +308,18 @@ Testgruppen
 > *4: komplex (json, State Machine, Arrays, ...)*
 >- *Der eigene Code kann Zeile für Zeile erklärt werden*
 >- *Der Source Code ist nachvollziehbar kommentiertVerwendete Quellen sind deklariert*
----
 
 ---
 
 # Testing
 
----
+
 **Lernziel 4_Testing 1-2**
 
 >- *Es liegt eine Liste mit Testcases vor, welche auf den funktionalen und nicht-funktionalen Anforderungen basiert*
 >- *Die Testcases sind durchgeführt und die Resultate liegen vor*
 >- *Es liegt eine Tabelle mit folgenden Spalten vor: Nummer, Beschreibung, erwartete Reaktion, Ergebnis, Status*
 >- *Sämtliche Testcases sind in einer Tabelle dokumentiert*
-
----
 
 ## Durchführung-Testcases
 
@@ -395,29 +396,29 @@ Die anten kann man sogar als Milestones anschauen.
 
 Das erste mal den Arduino auf der Steckerplatine mit den LEDs verbunden. Dies war das erste erfolgserlebniss von uns beiden. Wir natürlich zuerst die LEDs einmal austesten und schauen wie diese funktionieren.
 
-![Flashback1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/1.jpg)
+![Flashback1](00_img/Flashbacks/1.jpg)
 
 **Flashback 2**
 
 
 
-![Flashback2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/2.jpg)
+![Flashback2](00_img/Flashbacks/2.jpg)
 
 **Flashback 3**
 
 
 
-![Flashback3](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.0.jpg)
+![Flashback3](00_img/Flashbacks/3.0.jpg)
 
-![Flashback3.1](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.1.jpg)
+![Flashback3.1](00_img/Flashbacks/3.1.jpg)
 
-![Flashback3.2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/3.2.jpg)
+![Flashback3.2](00_img/Flashbacks/3.2.jpg)
 
 **Flashback 4**
 
 
 
-[Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.mp4)
+[Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
 
 
 
