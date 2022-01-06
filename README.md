@@ -139,19 +139,32 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 ---
 
-**Schalter am Eingang**
+**1. Schalter am Eingang**
 
 - Signalart: Gleichspannung
 - Wertebereich: 0 V oder 3.3 V
 - Umwandlung: 0 V entspricht keiner Funktion und 3.3 V entspricht change case
  
-**Mikrofon am Eingang**
+**2. Mikrofon am Eingang**
 
 - Signalart: Wechselspannung (das Mik wandelt Schalldruck in Wechselspannung um)
 - Wertebereich: zwischen 0 V und 3.3 V sind alle Werte möglich
 - Umwandlung: z.B. 70 dB SPL entsprechen 1.2 V AC und bedeutet im Programm, dass die grüne LED leuchtet
 
-**LED am Ausgang**
+**Specifications**
+
+|Item|Value|
+|-----|------|
+|Operating Voltage Range| 3.3/5 V |
+|Operating Current(Vcc=5V)|4~5 mA|
+|Voltage Gain(V=6V, f=1kHz)|26 dB|
+|Microphone sensitivity(1kHz)|52-48 dB|
+|Microphone Impedance|2.2k Ohm|
+|Microphone Frequency|16-20 kHz|
+|Microphone S/N Radio|54 dB|
+
+
+**3. LED am Ausgang**
 
 - Signalart: Gleichspannung
 - Wertebereich: zwischen 0 und 3.3 V
@@ -199,7 +212,7 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 ---
 
-|  MIC   |  A0    |  10Bit |Ausgang |
+|  MIC   |   PIN A0    |  10Bit |Ausgang |
 |--------|--------|--------|--------|
 |   dB   |   -    |    10000    |    LED Grün Pin 0    |
 |   dB   |   -    |    10000    |    LED Grün Pin 1    |
@@ -209,15 +222,16 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 |   dB   |   -    |    10000    |    LED Rot Pin 5     |
 |   dB   |   -    |    10000    |    LED Blau Pin 6    |
 
-| Button |    8   |  Programm |
+| Button |   PIN 8   |  Programm |
 |--------|--------|--------|
 |   0     |        |    Programm 1    |
 |   1     |        |    Programm 2    |
 |   1     |        |    Programm 3    |
 
-| LED    |  0-6   |Ausgang |
+| LED    | PIN 0-6   |Ausgang |
 |--------|--------|--------|
-|        |        |        |
+|   0     |        |    Nicht aktiv    |
+|   1     |        |    Aktiv    |
 
 
 
