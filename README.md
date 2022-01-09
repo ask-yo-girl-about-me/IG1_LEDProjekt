@@ -423,17 +423,23 @@ Wir mussten uns effektiv mit einem Pull up / down Schaltung auseinander setzen. 
 
 Grösstes erfolgserlebnis. Nach langem zusammenbauen, recherchieren, testen und misserfolgen, funktionierte unser Dezibel Messer. Dies war ein sehr schöner Moment für uns beiden. An diesem Punkt hatte wird wieder ein bischen einen Motivationsschub und wir freuten uns sehr über diesen Erfolg.
 
+Hier ein Video darüber welches direkt nach dem Erfolg aufgenommen wurde.
+
 [Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
-
-
 
 ---
 
 # Reflexion (Problemstellungen)
-- Hardware (LED Streifen/ENV Shield)
-- Programmsprache C
-- FastLED Library welche nur ging wenn man MKR1000 ausgewählt hat
-- Haupprogramm Struktur SwitchCase (Technisch nicht möglich)
+
+Nun am ende mit dem Projekt, können wir beide sagen, dass es ein harter weg war bis ans ende. Wir waren beide sehr Motiviert auf das Projekt und auch unsere Idee. Leider mussten wir recht schnell viele Misserfolge erleben betreffend Hardware und auch nicht funktionierenden Programme. Es hat angefangen mit unwissen von der Programmiersprache C++ welche uns mühe machte. Es ging weiter mit dem LED Streifen welche nur Probleme machte und dem ENV Shield welches ebenfalls nicht funktionierte und so weiter.
+
+Ein weiteres Hinderniss war, dass die LED Library welche wir brauchten nur dann funktionierte, wenn wir den Arduino MKR1000 ausgewählt hatte, obwohl wir einen MKR1010 hatten. Nach dem wir dies herausgefunden haben und so unsere Programme weiter getestet hatte, mussten wir feststellen, das der Computer nun unseren Arduino nicht mehr als MKR1010 sieht sonder als MKR1000. Somit mussten wir sogar unser Arduino umstauschen weil alles andere nicht mehr funktioniert hat.
+
+Wir versuchten aber stets die Motivation oben zu behalten um so an das Ziel zu kommen, auch wenn es nicht immer einfach war. Trotzdem haben wir viel gelertn und kamn sehr weit in unserem Projekt. Den grundfundament von unserem Projekt haben wir erreicht und grundsätzlich das Ziel so erreich. An dieser Stelle muss man natürlich auch sagen, dass die Hilfe von Herr Jäger natürlich auch sehr hilfreich war.
+
+Gegen den Schluss mussten wir aber feststellen, dass unsere vorstellungen von einem Programm welches einen Switch Case enthält und eigentlich zwei Programme in einem enthält nicht ganz funktioniert.
+
+Alles in allem war es aber ein Erfolg. Wir sind mit unserer Leistung zufrieden und stolz darauf, was wir alles erarbeitet haben. Wir hatten beide keine Erfahrung mit Programmieren und mussten uns alles selbst beibringen. Dazu muss man auch sagen, dass wir unser Projekt von den Anforderungen bisschen zu hoch gesetzt haben für unser Wissen.
 
 ---
 
