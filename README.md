@@ -400,23 +400,28 @@ Das erste mal den Arduino auf der Steckerplatine mit den LEDs verbunden. Dies wa
 
 **Flashback 2**
 
-
+Hier haben wir verzeifelt den LED Streifen mit unserem Dezibel Meter getestet. Leider funktionierte es aber nie so wie wir wollten. Teilweise machte der LED Streifen garnichts und manchmals machte er sehr komische Sachen, welche wir uns nicht erklären konnten.
 
 ![Flashback2](00_img/Flashbacks/2.jpg)
 
 **Flashback 3**
 
-
+Der grosse wechsel auf die LEDs. Nach dem wir mit Herr Jäger darum gesprochen haben, dass wir sehr viel Zeit verlieren mit dem LED Streifen, haben wir uns entschlossen das Projekt ein bisschen anzupassen. Wir haben den LED Streifen mit einzelnen LEDs ausgetauscht. Somit können wir die LEDs einzeln ansteuern aber die Hauptidee bleibt gleich. Nach langer Zeit hatte wir mal ein erfolgserlebis, als die einzelnen LEDs geleichtet haben. Dies gab uns nach den vielen misserfolgen, die wir bis hier hin hatten wieder einen kleinen kick für die Motivation.
 
 ![Flashback3](00_img/Flashbacks/3.0.jpg)
+
+**Flashback 4**
+
+Wir haben lange mit dem Button gespielt und hatten auch zwei drei kleine hindernisse. Schlussentlich konnten wir entlich die verknüpfung mit der Theorie welche wir hatten zusammenschliessen.
+Wir mussten uns effektiv mit einem Pull up / down Schaltung auseinander setzen. Wir haben dies zuerst einfach nach Gefühl angeschlossen, aber haben bemerkt, dass dies nicht korrekt durchlauft. Somit haben wir uns mit Herr Jäger damit auseinander gesetzt und bemerkt, dass wir den den Pull Up / Down entweder in unsere Schaltung einbauen müssen oder dies per Code definieren. Dies war eine Interessante feststellung und sehr lehrreich.
 
 ![Flashback3.1](00_img/Flashbacks/3.1.jpg)
 
 ![Flashback3.2](00_img/Flashbacks/3.2.jpg)
 
-**Flashback 4**
+**Flashback 5**
 
-
+Grösstes erfolgserlebnis. Nach langem zusammenbauen, recherchieren, testen und misserfolgen, funktionierte unser Dezibel Messer. Dies war ein sehr schöner Moment für uns beiden. An diesem Punkt hatte wird wieder ein bischen einen Motivationsschub und wir freuten uns sehr über diesen Erfolg.
 
 [Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
 
