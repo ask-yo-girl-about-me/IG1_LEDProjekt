@@ -6,13 +6,13 @@ bool onLED = false; // Zustand der LED, zum initialisieren auf false gesetzt
 int delayTime = 100; // Verzögerung in ms
 
 void setup() {
-pinMode(10, INPUT); // Taster
+pinMode(8, INPUT); // Taster
 pinMode(7, OUTPUT); // LED
 Serial.begin(9600); // startet den Serial Monitor, mehr dazu später
 }
 
 void loop() {
-if (digitalRead(10) == LOW) // Abfrage ob der Taster gedrückt ist
+if (digitalRead(8) == LOW) // Abfrage ob der Taster gedrückt ist
 {
 if (onLED == false) { // ist der Status der LED aus?
 onLED = true; // wenn ja, wird er jetzt auf ein gesetzt

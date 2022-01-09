@@ -15,7 +15,7 @@ int db_value = A0;
 File dataFile;
 
 void setup() {
-    Serial.begin(115200);
+    Serial.begin(9600);
      pinMode(0, OUTPUT);
      pinMode(1, OUTPUT);
      pinMode(2, OUTPUT);
