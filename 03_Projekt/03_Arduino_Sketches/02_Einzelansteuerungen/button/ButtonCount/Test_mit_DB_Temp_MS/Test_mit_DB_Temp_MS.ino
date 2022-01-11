@@ -36,7 +36,7 @@ void setup() {
     Serial.println("Failed to initialize MKR ENV shield!");
     while (1);
   }
-
+  
   // init SPI
   SPI.begin();
   
@@ -84,10 +84,10 @@ void loop() {
   if (count_value == 1){
 
       // init the logfile 
-      dataFileTEMP;
+      dataFileTEMP = SD.open("logTemp-0000.csv", FILE_WRITE);
       delay(10);
-
-     float temperature = ENV.readTemperature();
+/////Temp//////
+       float temperature = ENV.readTemperature();
 
        // print each of the sensor values
         
@@ -104,13 +104,25 @@ void loop() {
        if (temperature>29.00) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
        if (temperature>31.00) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
        if (temperature>35.00) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-
+/////Temp/////
+      
        // print each of the sensor values
        dataFileTEMP.print(temperature);
        dataFileTEMP.print(",");
+
+       // close the file
+       dataFileTEMP.close();
+        
   buttonState;
   }
+  
   if (count_value == 2){
+
+       // init the logfile 
+      dataFileDB = SD.open("logDB-0000.csv", FILE_WRITE);
+      delay(10);
+
+/////DB/////
      adc= analogRead(MIC); //Read the ADC value from amplifer 
      Serial.println (adc);//Print ADC for initial calculation 
      dB = (adc+83.2073) / 11.003; //Convert ADC value to dB using Regression values
@@ -121,10 +133,14 @@ void loop() {
      if (dB>80) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
      if (dB>90) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
      if (dB>100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
+/////DB/////
 
        // print each of the sensor values
        dataFileDB.print(dB);
        dataFileDB.print(",");
+
+       // close the file
+       dataFileDB.close();
        
   buttonState;
   }
