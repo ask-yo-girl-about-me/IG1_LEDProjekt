@@ -69,6 +69,24 @@ void setup() {
 
 void loop() {
 
+  // init the logfile
+  dataFile = SD.open("logTEMP-0000.csv", FILE_WRITE);
+  delay(1000);
+  // print each of the sensor values
+  dataFile.print(temperature);
+  dataFile.print(",");
+  // close the file
+  dataFile.close();
+
+  // init the logfile
+  dataFile = SD.open("logDB-0000.csv", FILE_WRITE);
+  delay(1000);
+  // print each of the sensor values
+  dataFile.print(dB);
+  dataFile.print(",");
+  // close the file
+  dataFile.close();
+
   // read the state of the pushbutton value:
   buttonState = digitalRead(button);
 
@@ -83,10 +101,6 @@ void loop() {
   }
 
   if (count_value == 1){
-
-      // init the logfile
-      dataFile = SD.open("logTEMP-0000.csv", FILE_WRITE);
-      delay(1000);
 
      float temperature = ENV.readTemperature();
 
@@ -105,22 +119,11 @@ void loop() {
        if (temperature>29.00) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
        if (temperature>31.00) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
        if (temperature>35.00) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-
-       // print each of the sensor values
-       dataFile.print(temperature);
-       dataFile.print(",");
-
-       // close the file
-       dataFile.close();
-       
+   
   buttonState;
   }
   if (count_value == 2){
-
-     // init the logfile
-     dataFile = SD.open("logDB-0000.csv", FILE_WRITE);
-     delay(1000);
-      
+    
      adc= analogRead(MIC); //Read the ADC value from amplifer 
      Serial.println (adc);//Print ADC for initial calculation 
      dB = (adc+83.2073) / 11.003; //Convert ADC value to dB using Regression values
@@ -132,13 +135,6 @@ void loop() {
      if (dB>90) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
      if (dB>100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
 
-       // print each of the sensor values
-       dataFile.print(dB);
-       dataFile.print(",");
-
-       // close the file
-       dataFile.close();
-       
   buttonState;
   }
   if (count_value == 3){
