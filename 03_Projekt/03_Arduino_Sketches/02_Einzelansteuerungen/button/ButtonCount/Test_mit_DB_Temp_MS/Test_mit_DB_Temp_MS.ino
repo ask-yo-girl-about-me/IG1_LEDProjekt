@@ -16,7 +16,8 @@ int count_value = 0;
 int prestate = 0;
 
 // DBMeter ////////////////////////////////////////////////////
-int sig = A0;
+int adc;
+int dB, PdB; //the variable that will hold the value read from the microphone each time
 
 void setup() {
   pinMode(button, INPUT_PULLUP);      // initialize the pushbutton pin as an input:
@@ -49,7 +50,7 @@ void setup() {
   dataFileDB = SD.open("logDB-0000.csv", FILE_WRITE);
   delay(1000);
   // init the CSV file with headers
-  dataFileDB.println("db_value,");
+  dataFileDB.println("dB,");
   // close the file
   dataFileDB.close();
   delay(100);
@@ -107,38 +108,28 @@ void loop() {
        // print each of the sensor values
        dataFileTEMP.print(temperature);
        dataFileTEMP.print(",");
+  buttonState;
   }
   if (count_value == 2){
+     adc= analogRead(MIC); //Read the ADC value from amplifer 
+     Serial.println (adc);//Print ADC for initial calculation 
+     dB = (adc+83.2073) / 11.003; //Convert ADC value to dB using Regression values
 
-    // init the logfile 
-    dataFileDB;
-    delay(10);
-    
-    // read the sensors values
-    long db_value = 0;
-    for(int i=0; i<32; i++)
-      {
-          db_value += analogRead(A0);
-      }
-      db_value >>= 5;
-      Serial.println(db_value);
-      delay(10);
-       if (db_value>200) {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
-       if (db_value>250) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
-       if (db_value>300) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
-       if (db_value>350) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
-       if (db_value>400) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
-       if (db_value>500) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-       if (db_value>600) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
+     if (dB>50) {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
+     if (dB>60) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
+     if (dB>70) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
+     if (dB>80) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
+     if (dB>90) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
+     if (dB>100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
 
        // print each of the sensor values
-       dataFileDB.print(db_value);
+       dataFileDB.print(dB);
        dataFileDB.print(",");
        
-    buttonState;
+  buttonState;
   }
   if (count_value == 3){
     count_value =0;
-    buttonState;
+  buttonState;
   }
 }
