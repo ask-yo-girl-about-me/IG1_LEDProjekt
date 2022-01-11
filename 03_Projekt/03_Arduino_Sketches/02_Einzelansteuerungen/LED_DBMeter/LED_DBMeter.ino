@@ -1,6 +1,7 @@
 #define MIC A0
+int adc;
+int dB, PdB; //the variable that will hold the value read from the microphone each time
 
-int sig = A0;
 
 void setup() {
  Serial.begin(9600);
@@ -14,27 +15,19 @@ void setup() {
 
 }
 
-void led() {
-  // read the sensors values
-  long db_value = 0;
-    for(int i=0; i<32; i++)
-    {
-        db_value += analogRead(A0);
-    }
-    db_value >>= 5;
-    Serial.println(db_value);
-    delay(10);
-     if (db_value>200) {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
-     if (db_value>250) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
-     if (db_value>300) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
-     if (db_value>350) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
-     if (db_value>400) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
-     if (db_value>500) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-     if (db_value>600) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
-}
-
+     
 void loop() {
- led();
-}
+    adc= analogRead(MIC); //Read the ADC value from amplifer 
+    //Serial.println (adc);//Print ADC for initial calculation 
+    dB = (adc+83.2073) / 11.003; //Convert ADC value to dB using Regression values
 
-delay 100;
+    if (PdB!=dB)Serial.println (dB);
+
+     if (dB<50) {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
+     if (dB<60) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
+     if (dB<70) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
+     if (dB<80) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
+     if (dB<90) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
+     if (dB<100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
+     
+}
