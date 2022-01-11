@@ -18,7 +18,7 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden si
 - [Design](#design)
   - [Detailschema](#detailschema)
   - [Werte-Zuweisungs-Tabelle](#werte-zuweisungs-tabelle)
-  - [Program-Ablauf](#program-ablauf)
+  - [Programm-Ablauf](#programm-ablauf)
   - [Definierte-Testcases](#definierte-testcases)
 - [Implementierung](#implementierung)
   - [Realisierung](#realisierung)
@@ -218,7 +218,7 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 
 
-## Program-Ablauf
+## Programm-Ablauf
 
 **Lernziel 2_Design 3**
 
