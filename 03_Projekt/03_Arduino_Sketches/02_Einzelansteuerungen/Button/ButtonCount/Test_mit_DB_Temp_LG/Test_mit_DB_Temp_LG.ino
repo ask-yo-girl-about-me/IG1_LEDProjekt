@@ -68,25 +68,7 @@ void setup() {
 }
 
 void loop() {
-
-  // init the logfile
-  dataFile = SD.open("logTEMP-0000.csv", FILE_WRITE);
-  delay(1000);
-  // print each of the sensor values
-  dataFile.print(temperature);
-  dataFile.print(",");
-  // close the file
-  dataFile.close();
-
-  // init the logfile
-  dataFile = SD.open("logDB-0000.csv", FILE_WRITE);
-  delay(1000);
-  // print each of the sensor values
-  dataFile.print(dB);
-  dataFile.print(",");
-  // close the file
-  dataFile.close();
-
+  
   // read the state of the pushbutton value:
   buttonState = digitalRead(button);
 
@@ -101,6 +83,15 @@ void loop() {
   }
 
   if (count_value == 1){
+    
+      // init the logfile
+      dataFile = SD.open("logTEMP-0000.csv", FILE_WRITE);
+      delay(1000);
+      // print each of the sensor values
+      dataFile.print(temperature);
+      dataFile.print(",");
+      // close the file
+      dataFile.close();
 
      float temperature = ENV.readTemperature();
 
@@ -123,6 +114,15 @@ void loop() {
   buttonState;
   }
   if (count_value == 2){
+
+      // init the logfile
+      dataFile = SD.open("logDB-0000.csv", FILE_WRITE);
+      delay(1000);
+      // print each of the sensor values
+      dataFile.print(dB);
+      dataFile.print(",");
+      // close the file
+      dataFile.close();
     
      adc= analogRead(MIC); //Read the ADC value from amplifer 
      Serial.println (adc);//Print ADC for initial calculation 
