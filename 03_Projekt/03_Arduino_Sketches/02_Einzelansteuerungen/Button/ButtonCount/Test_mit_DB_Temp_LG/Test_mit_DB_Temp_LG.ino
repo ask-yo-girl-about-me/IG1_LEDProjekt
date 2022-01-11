@@ -4,11 +4,12 @@
 #define MIC A0
 
 // file object
-File dataFileDB;
-File dataFileTEMP;
+File dataFile;
 
 const int button = 8;     // button pin
-const int SD_CS_PIN = 4;
+
+// chip select for SD card
+const int SD_CS_PIN = 4;  
 
 // CountButton  //////////////////////////////////////////////////
 int buttonState = 0;         
@@ -47,21 +48,21 @@ void setup() {
   }
   
   // init the logfile for Temperature Values
-  dataFileDB = SD.open("logDB-0000.csv", FILE_WRITE);
+  dataFile = SD.open("logDB-0000.csv", FILE_WRITE);
   delay(1000);
   // init the CSV file with headers
-  dataFileDB.println("dB,");
+  dataFile.println("dB,");
   // close the file
-  dataFileDB.close();
+  dataFile.close();
   delay(100);
 
   // init the logfile for Temperature Values
-  dataFileTEMP = SD.open("logTemp-0000.csv", FILE_WRITE);
+  dataFile = SD.open("logTemp-0000.csv", FILE_WRITE);
   delay(1000);
   // init the CSV file with headers
-  dataFileTEMP.println("temperature,");
+  dataFile.println("temperature,");
   // close the file
-  dataFileTEMP.close();
+  dataFile.close();
   delay(100);
   
 }
@@ -84,7 +85,7 @@ void loop() {
   if (count_value == 1){
 
       // init the logfile
-      dataFileTEMP = SD.open("logTEMP-0000.csv", FILE_WRITE);
+      dataFile = SD.open("logTEMP-0000.csv", FILE_WRITE);
       delay(1000);
 
      float temperature = ENV.readTemperature();
@@ -106,18 +107,18 @@ void loop() {
        if (temperature>35.00) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
 
        // print each of the sensor values
-       dataFileTEMP.print(temperature);
-       dataFileTEMP.print(",");
+       dataFile.print(temperature);
+       dataFile.print(",");
 
        // close the file
-       dataFileTEMP.close();
+       dataFile.close();
        
   buttonState;
   }
   if (count_value == 2){
 
      // init the logfile
-     dataFileDB = SD.open("logDB-0000.csv", FILE_WRITE);
+     dataFile = SD.open("logDB-0000.csv", FILE_WRITE);
      delay(1000);
       
      adc= analogRead(MIC); //Read the ADC value from amplifer 
@@ -132,11 +133,11 @@ void loop() {
      if (dB>100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
 
        // print each of the sensor values
-       dataFileDB.print(dB);
-       dataFileDB.print(",");
+       dataFile.print(dB);
+       dataFile.print(",");
 
        // close the file
-       dataFileDB.close();
+       dataFile.close();
        
   buttonState;
   }
