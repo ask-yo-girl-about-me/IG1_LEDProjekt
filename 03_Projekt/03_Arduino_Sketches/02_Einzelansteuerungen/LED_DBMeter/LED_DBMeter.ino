@@ -27,5 +27,4 @@ void loop() {
      if (dB>80) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
      if (dB>90) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
      if (dB>100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-     
 }
