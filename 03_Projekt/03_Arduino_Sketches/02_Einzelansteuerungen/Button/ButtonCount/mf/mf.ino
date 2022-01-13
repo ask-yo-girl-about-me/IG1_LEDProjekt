@@ -16,6 +16,8 @@ int buttonState = 0;
 int count_value = 0;
 int prestate = 0;
 
+float temperature = 0;
+
 // DBMeter ////////////////////////////////////////////////////
 int adc;
 int dB, PdB; //the variable that will hold the value read from the microphone each time
@@ -118,6 +120,8 @@ void loop() {
       dataFile.print(",");
       // close the file
       dataFile.close();
+
+      float temperature = ENV.readTemperature();
     
      adc= analogRead(MIC); //Read the ADC value from amplifer 
      Serial.println (adc);//Print ADC for initial calculation 
