@@ -1,6 +1,6 @@
 # IG1_LEDProjekt
 
-Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden sie das ganze Projekt und alle dazugehörigen Daten. Die ganze Ablage ist Dokumentiert und beschrieben.
+Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der GITHUB Ablage finden sie das ganze Projekt und alle dazugehörigen Daten. Die ganze Ablage ist Dokumentiert und beschrieben.
 
 # Inhaltsverzeichnis
 - [IG1_LEDProjekt](#ig1_ledprojekt)
