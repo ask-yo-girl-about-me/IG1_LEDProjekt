@@ -24,7 +24,7 @@ float pressure = 0;
 //float UVIndex = 0;
 
 // file object
-File dataFile;
+File dataFile1;
 
 void setup() {
   Serial.begin(9600);
@@ -46,21 +46,20 @@ void setup() {
   }
 
   // init the logfile
-  dataFile = SD.open("log-0000.csv", FILE_WRITE);
+  dataFile1 = SD.open("log-0000.csv", FILE_WRITE);
   delay(1000);
 
   // init the CSV file with headers
-//  dataFile.println("temperature,humidity,");
+//  dataFile1.println("temperature,humidity,");
 
   // close the file
-  dataFile.close();
+  dataFile1.close();
   delay(100);
 }
 
 void loop() {
   // init the logfile
-  dataFile = SD.open("log-0000.csv", FILE_WRITE);
-  delay(1000);
+  dataFile1 = SD.open("log-0000.csv", FILE_WRITE);
 
   // read the sensors values
   temperature = ENV.readTemperature();
@@ -71,22 +70,25 @@ void loop() {
 //  UVIndex = ENV.readUVIndex();
 
   // print each of the sensor values
-  dataFile.print("temperatur:");
-  dataFile.print(temperature);
-  dataFile.print("humidiity:,");
-  dataFile.print(humidity);
-  dataFile.print(",");
-//  dataFile.print("test");
-//  dataFile.print(",");
-//  dataFile.print(UVA);
-//  dataFile.print(",");
-//  dataFile.print(UVB);
-//  dataFile.print(",");
-//  dataFile.println(UVIndex);
+  dataFile1.print("temperatur:");
+  dataFile1.print(",");
+  dataFile1.print(temperature);
+  dataFile1.print(",");
+  dataFile1.print("humidity:");
+  dataFile1.print(",");
+  dataFile1.print(humidity);
+  dataFile1.print(",");
+//  dataFile1.print("test");
+//  dataFile1.print(",");
+//  dataFile1.print(UVA);
+//  dataFile1.print(",");
+//  dataFile1.print(UVB);
+//  dataFile1.print(",");
+//  dataFile1.println(UVIndex);
 
   // close the file
-  dataFile.close();
+  dataFile1.close();
 
   // wait 1 second to print again
-  delay(1000);
+
 }

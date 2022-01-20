@@ -13,18 +13,15 @@
 #include <SD.h>
 
 // chip select for SD card
-const int SD_CS_PIN = 4;  
+const int SD_CS_PIN = 4;
 
 // variables
 float temperature = 0;
 float humidity = 0;
-float pressure = 0;
-float UVA = 0;
-float UVB = 0;
-float UVIndex = 0;
 
 // file object
-File dataFile;
+//File dataFiledb;
+File dataFiletemp;
 
 void setup() {
   Serial.begin(9600);
@@ -40,51 +37,51 @@ void setup() {
   delay(100);
 
   // init SD card
-  if(!SD.begin(SD_CS_PIN)) {
+  if (!SD.begin(SD_CS_PIN)) {
     Serial.println("Failed to initialize SD card!");
     while (1);
   }
 
   // init the logfile
-  dataFile = SD.open("log-0000.csv", FILE_WRITE);
+  dataFiletemp = SD.open("logTemp-0000.csv", FILE_WRITE);
   delay(1000);
-
   // init the CSV file with headers
-  dataFile.println("temperature,humidity,pressure,UVA,UVB,UVindex");
-
+  dataFiletemp.println("temperature");
   // close the file
-  dataFile.close();
+  dataFiletemp.close();
   delay(100);
+
+  // init the logfile
+ // dataFiledb = SD.open("logDB-0000.csv", FILE_WRITE);
+ // delay(1000);
+  // init the CSV file with headers
+//  dataFile.println("humidity");
+  // close the file
+ // dataFile.close();
+ // delay(100);
 }
 
 void loop() {
   // init the logfile
-  dataFile = SD.open("log-0000.csv", FILE_WRITE);
+  dataFiletemp = SD.open("logTemp-0000.csv", FILE_WRITE);
   delay(1000);
+  // init the logfile
+//  dataFiledb = SD.open("logDB-0000.csv", FILE_WRITE);
+//  delay(1000);
 
   // read the sensors values
   temperature = ENV.readTemperature();
-  humidity = ENV.readHumidity();
-  pressure = ENV.readPressure();
-  UVA = ENV.readUVA();
-  UVB = ENV.readUVB();
-  UVIndex = ENV.readUVIndex();
+//  humidity = ENV.readHumidity();
 
   // print each of the sensor values
-  dataFile.print(temperature);
-  dataFile.print(",");
-  dataFile.print(humidity);
-  dataFile.print(",");
-  dataFile.print(pressure);
-  dataFile.print(",");
-  dataFile.print(UVA);
-  dataFile.print(",");
-  dataFile.print(UVB);
-  dataFile.print(",");
-  dataFile.println(UVIndex);
+  dataFiletemp.print(temperature);
+  dataFiletemp.print(",");
+//  dataFile.print(humidity);
+ // dataFile.print(",");
+
 
   // close the file
-  dataFile.close();
+  dataFiletemp.close();
 
   // wait 1 second to print again
   delay(1000);

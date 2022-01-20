@@ -23,16 +23,11 @@ void setup() {
   pinMode(7, OUTPUT);
   
   Serial.begin(9600);
-  while (!Serial);
-    
-  if (!ENV.begin()) {
-    Serial.println("Failed to initialize MKR ENV shield!");
-    while (1);
-  }
+  
 }
 
 void loop() {
-
+  
   // read the state of the pushbutton value:
   buttonState = digitalRead(button);
 
@@ -47,29 +42,26 @@ void loop() {
   }
 
   if (count_value == 1){
-
-/////Temp//////
-       float temperature = ENV.readTemperature();
+    
+     float temperature = ENV.readTemperature();
 
        // print each of the sensor values
+        
        Serial.print("Temperature = ");
        Serial.print(temperature);
-       
-       Serial.println();
+      
        if (temperature<19.99)  {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
        if (temperature>20.00)  {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
        if (temperature>25.00)  {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
        if (temperature>27.00)  {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
        if (temperature>29.00) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
-       if (temperature>31.00) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-       if (temperature>35.00) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
-        
+       if (temperature>31.00) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
+       if (temperature>35.00) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
+   
   buttonState;
   }
-  
   if (count_value == 2){
-
-/////DB/////
+    
      adc= analogRead(MIC); //Read the ADC value from amplifer 
      Serial.println (adc);//Print ADC for initial calculation 
      dB = (adc+83.2073) / 11.003; //Convert ADC value to dB using Regression values
@@ -78,9 +70,9 @@ void loop() {
      if (dB>60) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
      if (dB>70) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
      if (dB>80) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
-     if (dB>90) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-     if (dB>100) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
-       
+     if (dB>90) {digitalWrite(4, HIGH);} else {digitalWrite(4, LOW);}
+     if (dB>100) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
+
   buttonState;
   }
   if (count_value == 3){
