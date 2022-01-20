@@ -19,9 +19,9 @@ const int SD_CS_PIN = 4;
 float temperature = 0;
 float humidity = 0;
 float pressure = 0;
-//float UVA = 0;
-//float UVB = 0;
-//float UVIndex = 0;
+float UVA = 0;
+float UVB = 0;
+float UVIndex = 0;
 
 // file object
 File dataFile;
@@ -50,7 +50,7 @@ void setup() {
   delay(1000);
 
   // init the CSV file with headers
-//  dataFile.println("temperature,humidity,");
+  dataFile.println("temperature,humidity,pressure,UVA,UVB,UVindex");
 
   // close the file
   dataFile.close();
@@ -65,24 +65,23 @@ void loop() {
   // read the sensors values
   temperature = ENV.readTemperature();
   humidity = ENV.readHumidity();
-//  pressure = ENV.readPressure();
-//  UVA = ENV.readUVA();
-//  UVB = ENV.readUVB();
-//  UVIndex = ENV.readUVIndex();
+  pressure = ENV.readPressure();
+  UVA = ENV.readUVA();
+  UVB = ENV.readUVB();
+  UVIndex = ENV.readUVIndex();
 
   // print each of the sensor values
-  dataFile.print("temperatur:");
   dataFile.print(temperature);
-  dataFile.print("humidiity:,");
+  dataFile.print(",");
   dataFile.print(humidity);
   dataFile.print(",");
-//  dataFile.print("test");
-//  dataFile.print(",");
-//  dataFile.print(UVA);
-//  dataFile.print(",");
-//  dataFile.print(UVB);
-//  dataFile.print(",");
-//  dataFile.println(UVIndex);
+  dataFile.print(pressure);
+  dataFile.print(",");
+  dataFile.print(UVA);
+  dataFile.print(",");
+  dataFile.print(UVB);
+  dataFile.print(",");
+  dataFile.println(UVIndex);
 
   // close the file
   dataFile.close();
