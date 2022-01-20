@@ -1,6 +1,6 @@
 # IG1_LEDProjekt
 
-Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der Ablage finden sie das ganze Projekt und alle dazugehörigen Daten. Die ganze Ablage ist Dokumentiert und beschrieben.
+Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der GITHUB Ablage finden sie das ganze Projekt und alle dazugehörigen Daten. Die ganze Ablage ist Dokumentiert und beschrieben.
 
 # Inhaltsverzeichnis
 - [IG1_LEDProjekt](#ig1_ledprojekt)
@@ -84,8 +84,8 @@ Optional wenn noch Zeit zur Verfügung ist:
 
 Erforderliche Hardware für Projekt:
 - MKR Wifi 1010
-- MKR ENV Shield (Thermometer)
-- Mikrophon (DB Messer)
+- MKR ENV Shield (Für Thermometer)
+- Mikrophon *Grove Sound Sensor v1.6* (Für DB Messer)
 - SD-Karte
 - 2 Grüne LED
 - 2 Gelbe LED
@@ -103,13 +103,32 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 >- *"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
 
-- Das Programm kann anhand von grünen, gelben und roten LEDs die lautstärke anzeigen. Es fangt mit grün an und je lauter es wieder je mehr LEDs werden aktiv und es wechselt von grün auf gelb und am schluss noch rot.
+Die Funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
-- Der Temperaturmeter zeigt die anhand von grünen, gelben und roten LEDs die Optimale Temperatur an. 25°-27° ist grün, 28°-30° ist gelb und alles über 30° ist rot.
+**1. DB Meter**
+   - Beim DB Meter werden nur die grünen, gelben und roten LEDs genutzt. 
+   - Das erste grünen LED leuchtet wenn der DB Wert 50db oder mehr erreicht.
+   - Das zweite grüne LED leuchtet wenn der DB Wert 60db oder mehr erreicht. 
+   - Das erste gelben LED leuchtet wenn der DB Wert 70db oder mehr erreicht.
+   - Das zweite gelbe LED leuchtet wenn der DB Wert 80db oder mehr erreicht.
+   - Das erste rote LED leuchtet wenn der DB Wert 90db oder mehr erreicht.
+   - Das zweite rote LED leuchtet wenn der DB Wert 100db oder mehhr erreicht.
 
-- Die Dezibel und Temperatur Daten werden geloggt und in eine CSV Datei auf die internen SD Karte geschrieben.
 
-- Per Knopfdruck kann man von einen ersten programm in das zweite wechseln.
+**2. Temp Meter**
+   - Beim Temp Meter werden die grünen, gelben, roten und blauen LEDs gebraucht
+   - Das erste grünen LED leuchtet wenn der Temp Wert 20° oder mehr erreicht.
+   - Das zweite grüne LED leuchtet wenn der DB Wert 25° oder mehr erreicht. 
+   - Das erste gelben LED leuchtet wenn der DB Wert 27° oder mehr erreicht.
+   - Das zweite gelbe LED leuchtet wenn der DB Wert 29° oder mehr erreicht.
+   - Das erste rote LED leuchtet wenn der DB Wert 31° oder mehr erreicht.
+   - Das zweite rote LED leuchtet wenn der DB Wert 35° oder mehhr erreicht.
+   - Das blaue LED leuchtet wenn der DB Wert unter 19.99° oder weniger fällt.
+
+**3. Sonstiges**
+   - Die DB und Temp Daten werden per ENV Shiel auf eine SD Karte geloggt. Beide Werte werden in ein separates File geschrieben.
+   - Wenn man das Programm starte und ein mal den Knopf druckt, wechselt der Arduino in den Temp Meter und merkt sich die Anzahl Knopfdrücke
+   - Wenn man im Temp Meter den Knopfdrückt, zählt er die Anzahl Knopf Drücke zusammen und wechselt in den DB Meter
 
 ## Nicht-funktionale Anforderungen
 
@@ -117,12 +136,19 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 >- *"Es gibt eine Liste mit den nicht-funktionalen Anforderungen"*
 
+Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
-- Die Temperaturmessung kann Temperaturen von -40 °C und +120 °C aufnehmen. Der Bereich im Programm ist auf 15° bis 30 ° definiert.
-  
-- Das Progamm kann mindestens 5 Minuten laufen ohne ausfall (Überhitzen oder Aussetzer)
-  
--  Die jeweiligen Daten werden sobald das jeweilige Programm (entweder DB-Meter oder Temp-Meter) geloggt solange bis das Programm gewechselt wird, SD Karte ausgesteckt wird oder der Arduino beendet wird.
+**1. SD Karte entfernen**
+   Wenn das Programm gestartet wird und keine SD Karte vorhanden ist, beendet der Arduino das Programm und gibt im Serial Monitor aus, dass keine SD Karte gefunden wurde.
+
+**2. Kein Shield aktiv**
+   Wenn das Programm ohne ENV Shield gestartet wird, gibt dies der Serial Monitor aus.
+
+**3. Mikrofon entfernen**
+   Wenn währen dem Programm das Mikrofon entfernt wird, leuchten alle LEDs mehr.
+
+**4. Dritter Knopfdruck**
+   Wenn man im DB Meter ist und man den Knopf einmal drückt, zählt er die Anzahl Knopdrücke zusammen und wechselt wieder in den defaul herein wo keine LEDs aktiv sind.
   
 ## Signalbeschrieb
 
@@ -136,13 +162,13 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 - Wertebereich: 0 V oder 3.3 V
 - Umwandlung: 0 V entspricht keiner Funktion und 3.3 V entspricht change case
  
-**2. Mikrofon am Eingang**
+**2. Mikrofon am Eingang (Grove Sound Sensor v1.6)**
 
 - Signalart: Wechselspannung (das Mik wandelt Schalldruck in Wechselspannung um)
 - Wertebereich: zwischen 0 V und 3.3 V sind alle Werte möglich
 - Umwandlung: z.B. 70 dB SPL entsprechen 1.2 V AC und bedeutet im Programm, dass die grüne LED leuchtet
 
-**Specifications**
+**Spezifikationen Mikrofon**
 
 |Item|Value|
 |-----|------|
@@ -160,6 +186,13 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 - Signalart: Gleichspannung
 - Wertebereich: zwischen 0 und 3.3 V
 - Umwandlung: 0 V LED deaktiviert 3.3 V LED aktiv
+
+**4. SD Karte**
+
+- Signalart: ?
+- Wertebereich: Low Voltage?
+
+[Arduino ENV Shield Shematics](https://content.arduino.cc/assets/MKRENVShieldV4.0_sch.pdf?_gl=1*1issfvw*_ga*ODA3NzI5MTkxLjE2MzM5NTUwMTU.*_ga_NEXN8H46L5*MTY0MjM0ODU4MC4xOS4xLjE2NDIzNDg1ODAuMA..)
 
 ## Blockschaltbild
 
@@ -195,26 +228,25 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 >- *"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
 
-|  MIC   |   PIN A0    |  10Bit |Ausgang |
+|  MIC   |   PIN A0    |  AnalogRead Werte |Ausgang |
 |--------|--------|--------|--------|
-|   dB   |   -    |    10000    |    LED Grün Pin 0    |
-|   dB   |   -    |    10000    |    LED Grün Pin 1    |
-|   dB   |   -    |    10000    |    LED Gelb Pin 2    |
-|   dB   |   -    |    10000    |    LED Gelb Pin 3    |
-|   dB   |   -    |    10000    |    LED Rot Pin 4     |
-|   dB   |   -    |    10000    |    LED Rot Pin 5     |
-|   dB   |   -    |    10000    |    LED Blau Pin 6    |
+|   50 dB   |   -    |        |    LED Grün Pin 0    |
+|   60dB   |   -    |        |    LED Grün Pin 1    |
+|   70dB   |   -    |        |    LED Gelb Pin 2    |
+|   80dB   |   -    |        |    LED Gelb Pin 3    |
+|   90dB   |   -    |        |    LED Rot Pin 4     |
+|   100dB   |   -    |        |    LED Rot Pin 5     |
 
 | Button |   PIN 8   |  Programm |
 |--------|--------|--------|
-|   0     |        |    Programm 1    |
-|   1     |        |    Programm 2    |
-|   1     |        |    Programm 3    |
+|   0     |   -     |    Programm 1    |
+|   1     |   -     |    Programm 2    |
+|   1     |    -    |    Programm 3    |
 
 | LED    | PIN 0-6   |Ausgang |
 |--------|--------|--------|
-|   0     |        |    Nicht aktiv    |
-|   1     |        |    Aktiv    |
+|   0     |   -     |    Nicht aktiv    |
+|   1     |   -     |    Aktiv    |
 
 
 
@@ -248,31 +280,32 @@ Testgruppen
 **TG-10**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
-|  10-1  |  Grüne LEDS  |  Song auf Handy laufen lassen mit 10% lautstärke. | Nur die grüne LEDs sind |
-|  10-2  |  Gelben LEDS  |  Song auf Handy laufen lassen mit 50% lautstärke. | Die grünen und gelben LEDs sind aktiv |
-|  10-3  |  Roten LEDS  |  Song auf Handy laufen lassen mit 100% lautstärke. | Die grünen, gelben und roten LEDs sind aktiv |
-|  10-4  |  Kein Microfon  |  Microfon wird entfernt  |  Keine LEDs sind aktiv | 
+|  10-1  |  Grüne LEDS  | Auf Handy Musik laufen lassen welche zwischen 50db und 60db ist | Es dürfen nur die grünen LEDs leuchten
+|  10-2  |  Gelben LEDS  |   Auf Handy Musik laufen lassen welche zwischen 70db und 80db ist | Es müssen die grünen und die gelben LEDs leuchten |
+|  10-3  |  Roten LEDS  |  Auf Handy Musik laufen lassen welche zwischen 90db und 100db ist | Die grünen, gelben und roten LEDs müssen aktiv sein |
+|  10-4  |  Kein Microfon  |  Microfon entfernen während dem Betrieb  |  Keine LEDs sind aktiv | 
 
 **TG-20**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
-|  20-1  |  Grüne LEDs  |  Temperatur auf 25°-27° regulieren | Nur die grüne LEDs sind aktiv |
-|  20-2  |  Gelbe LEDs  |  Temperatur auf 28°-30° regulieren | Die grüne und gelben LEDs sind aktiv |
-|  20-3  |  Roten LEDs  |  Temperatur auf 31° und mehr regulieren | Die grüne. gelben und roten LEDs sind aktiv |
+|  20-1  |  Grüne LEDs  |  Temperatur muss zwischen 20° und 25° sein | Nur die grüne LEDs dürfen aktiv sein|
+|  20-2  |  Gelbe LEDs  |  Temperatur muss zwischen 27° und 29° sein | Die grüne und gelben LEDs müssen aktiv sein |
+|  20-3  |  Roten LEDs  |  Temperatur muss zwischen 31° und 35° sein  | Die grüne. gelben und roten LEDs müssen aktiv sein |
+|  20-4  |  Blaue LEDs  |  Temperatur muss auf 19.99 oder weniger reguliert werden | Die blaue LED muss aktiv sein |
 
 **TG-30**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
-|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (DB meter) |
-|  30-2  | In das zweite Programm wechseln   | Nach dem Programm Start Knopf zwei Mal drücken und wenn man im Case 1 ist nur einmal | 2 Case läuft durch (DB meter)
-|  30-3  |  Überschreiten der Case Nummer  | Knopf mehr als 2 mal drücken  | Da wir nur 2 Cases haben,ist beim 3 mal drücken das Programm fertig |
+|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |
+|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (DB meter)
+|  30-3  |  3 Knopfdruck  | Knopf im Case 2 nochmals drücken  |  Keine LEDs aktiv  |
 
 **TG-40**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
-|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Daten enthalten. Zuoberst ein Titel mit beschriftung Dezibel-Value. |
-|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte. Zuoberst ein Titel mit beschriftung Temperatur-Value.  |
-|  40-3  |  SD Karte entfernen  | SD Karte währen dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptop anschliesen  | Ein CSV File mit den Daten enthalten. Dezibel-Value. |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte.  |
+|  40-3  |  SD Karte entfernen  | SD Karte währent dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |
 |  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |
 
 ---
@@ -323,7 +356,7 @@ Testgruppen
 
 ## Durchführung-Testcases
 
-Testgruppen
+**Testgruppen**
 
 |  Nr.  |  Thema  |  Was?  |  Resultat  |
 |--------|--------|--------|--------|
@@ -334,33 +367,37 @@ Testgruppen
 
 **TG-10**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
-|--------|--------|--------|--------|--------|
-|  10-1  |  Grüne LEDS  |  Song auf Handy laufen lassen mit 10% lautstärke. | Nur die grüne LEDs sind |   |
-|  10-2  |  Gelben LEDS  |  Song auf Handy laufen lassen mit 50% lautstärke. | Die grünen und gelben LEDs sind aktiv |   |
-|  10-3  |  Roten LEDS  |  Song auf Handy laufen lassen mit 100% lautstärke. | Die grünen, gelben und roten LEDs sind aktiv | |
-|  10-4  |  Kein Microfon  |  Microfon wird entfernt  |  Keine LEDs sind aktiv |  |
+|--------|--------|--------|--------|-------|
+|  10-1  |  Grüne LEDS  | Auf Handy Musik laufen lassen welche zwischen 50db und 60db ist | Es dürfen nur die grünen LEDs leuchten
+|  10-2  |  Gelben LEDS  |   Auf Handy Musik laufen lassen welche zwischen 70db und 80db ist | Es müssen die grünen und die gelben LEDs leuchten |
+|  10-3  |  Roten LEDS  |  Auf Handy Musik laufen lassen welche zwischen 90db und 100db ist | Die grünen, gelben und roten LEDs müssen aktiv sein |
+|  10-4  |  Kein Microfon  |  Microfon entfernen während dem Betrieb  |  Keine LEDs sind aktiv | 
 
 **TG-20**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
-|  20-1  |  Grüne LEDs  |  Temperatur auf 25°-27° regulieren | Nur die grüne LEDs sind aktiv | |
-|  20-2  |  Gelbe LEDs  |  Temperatur auf 28°-30° regulieren | Die grüne und gelben LEDs sind aktiv | |
-|  20-3  |  Roten LEDs  |  Temperatur auf 31° und mehr regulieren | Die grüne. gelben und roten LEDs sind aktiv | |
+|  20-1  |  Grüne LEDs  |  Temperatur muss zwischen 20° und 25° sein | Nur die grüne LEDs dürfen aktiv sein|
+|  20-2  |  Gelbe LEDs  |  Temperatur muss zwischen 27° und 29° sein | Die grüne und gelben LEDs müssen aktiv sein |
+|  20-3  |  Roten LEDs  |  Temperatur muss zwischen 31° und 35° sein  | Die grüne. gelben und roten LEDs müssen aktiv sein |
+|  20-4  |  Blaue LEDs  |  Temperatur muss auf 19.99 oder weniger reguliert werden | Die blaue LED muss aktiv sein |
 
 **TG-30**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
-|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (DB meter) | |
-|  30-2  | In das zweite Programm wechseln   | Nach dem Programm Start Knopf zwei Mal drücken und wenn man im Case 1 ist nur einmal | 2 Case läuft durch (DB meter)|  |
-|  30-3  |  Überschreiten der Case Nummer  | Knopf mehr als 2 mal drücken  | Da wir nur 2 Cases haben,ist beim 3 mal drücken das Programm fertig |  |
+|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |
+|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (DB meter)
+|  30-3  |  3 Knopfdruck  | Knopf im Case 2 nochmals drücken  |  Keine LEDs aktiv  |
 
 **TG-40**
-|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat  |
+|  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
-|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Daten enthalten. Zuoberst ein Titel mit beschriftung Dezibel-Value. |  |
-|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte. Zuoberst ein Titel mit beschriftung Temperatur-Value.  |  |
-|  40-3  |  SD Karte entfernen  | SD Karte währen dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |  |
-|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |  |
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptop anschliesen  | Ein CSV File mit den Daten enthalten. Dezibel-Value. |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte.  |
+|  40-3  |  SD Karte entfernen  | SD Karte währent dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |
+|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |
+
+
+
 
 ---
 
@@ -426,6 +463,13 @@ Grösstes erfolgserlebnis. Nach langem zusammenbauen, recherchieren, testen und 
 Hier ein Video darüber welches direkt nach dem Erfolg aufgenommen wurde.
 
 [Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
+
+**Flashback 6**
+
+Programm wechsel zwischen DB und Temp Meter per Knopfdruck funktioniert!!!!!
+
+Nach dem wir alle einzel ansteuerungen erfolgreich erstellt haben, mussten wir diese alle in ein Programm zusammenführen. Leider funktionierte dies am Anfang nicht so wie wir wollten. Gemäss den Problemen die wir hatten, stellten wir fest (oder wir dachten es zumindest), dass unsere Projekt Idee so wie wir es wollten technisch garnicht funktioniert. Nach langem diskutieren, recherchieren und testen, kamen wir auf eine Lösung und unsere Idee war plötzlich technisch möglich.
+
 
 ---
 
