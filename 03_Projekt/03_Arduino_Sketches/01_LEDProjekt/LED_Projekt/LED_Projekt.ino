@@ -89,7 +89,7 @@ void loop() {
         prestate = 0;
     }
 
-    // Temperatur Meter //
+    // Programm Temperatur Meter //
     if (count_value == 1){
         // Erstes Programm wird hier mit ein Mal blinken der Blauen LED angezeigt
         if (ledblink == 1){
@@ -125,7 +125,7 @@ void loop() {
         buttonState;
     }
 
-    // Log Temperatur //
+    // Programm Log Temperatur //
     if (count_value == 2){
         if (ledblink == 2){
             // Zweites Programm wird hier mit zwei Mal blinken der Blauen LED angezeigt
@@ -158,7 +158,7 @@ void loop() {
         buttonState;
     }
 
-    // Dezibel Meter //
+    // Programm Dezibel Meter //
     if (count_value == 3){
         if (ledblink == 3){
             // Drittes Programm wird hier mit drei Mal blinken der Blauen LED angezeigt
@@ -192,18 +192,18 @@ void loop() {
         if (dB>50) {digitalWrite(0, HIGH);} else {digitalWrite(0, LOW);}
         // 2 Grüne LED HIGH wenn über 60dB ansonsten LOW
         if (dB>60) {digitalWrite(1, HIGH);} else {digitalWrite(1, LOW);}
-        // 1 Grüne LED HIGH wenn über 70dB ansonsten LOW
+        // 1 Gelbe LED HIGH wenn über 70dB ansonsten LOW
         if (dB>70) {digitalWrite(2, HIGH);} else {digitalWrite(2, LOW);}
-        // 1 Grüne LED HIGH wenn über 80dB ansonsten LOW
+        // 2 Gelbe LED HIGH wenn über 80dB ansonsten LOW
         if (dB>80) {digitalWrite(3, HIGH);} else {digitalWrite(3, LOW);}
-        // 1 Grüne LED HIGH wenn über 90dB ansonsten LOW
+        // 1 Rote LED HIGH wenn über 90dB ansonsten LOW
         if (dB>90) {digitalWrite(5, HIGH);} else {digitalWrite(5, LOW);}
-        // 1 Grüne LED HIGH wenn über 100dB ansonsten LOW
+        // 2 Rote LED HIGH wenn über 100dB ansonsten LOW
         if (dB>100) {digitalWrite(6, HIGH);} else {digitalWrite(6, LOW);}
         buttonState;
     }
   
-    // Log Dezibel
+    // Programm Log Dezibel //
     if (count_value == 4){
         if (ledblink == 4){
             // Viertes Programm wird hier mit vier Mal blinken der Blauen LED angezeigt
