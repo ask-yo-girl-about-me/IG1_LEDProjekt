@@ -76,7 +76,7 @@ Am 04.11.2021 wurde eine zweite Version des Projekt Beschriebs erstellt. Dies wu
 
 Hier den definierten Projekt Beschrieb vom [Projektantrag V2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf):
 
-In unserem Projekt handelt es sich um zwei integrierte Programme mit LEDs. Per Druck-Knopf wechseln wir durch die verschiedenen Programme durch. Programm eins handelt sich um die aktuelle Temperatur, welche durch Ändern der Farbe auf den LEDs angezeigt wird. Programm zwei handelt sich um einen DB Meter. Das Programm startet mit deaktivierten LEDs. Sobald Ton erkannt wird, werden die LEDs gemäss DB von unten nach oben aktiviert. Dies wird zusätzlich noch mit Farbe (Rote, grüne und Gelbe LEDs) gekennzeichnet.
+In unserem Projekt handelt es sich um zwei integrierte Programme mit LEDs. Per Druck-Knopf wechseln wir durch die verschiedenen Programme durch. Programm eins handelt sich um die aktuelle Temperatur, welche durch Ändern der Farbe auf den LEDs angezeigt wird. Programm zwei handelt sich um einen dB Meter. Das Programm startet mit deaktivierten LEDs. Sobald Ton erkannt wird, werden die LEDs gemäss dB von unten nach oben aktiviert. Dies wird zusätzlich noch mit Farbe (Rote, grüne und Gelbe LEDs) gekennzeichnet.
 Der Programmwechsel durch den Knopf wird mittels Blinkens von grünen LEDs angezeigt. Programm eins blinkt einmal für eine definierte Zeit. Programm zwei blinkt zwei Mal für eine definierte Zeit.
 
 Optional wenn noch Zeit zur Verfügung ist:
@@ -85,7 +85,7 @@ Optional wenn noch Zeit zur Verfügung ist:
 Erforderliche Hardware für Projekt:
 - MKR Wifi 1010
 - MKR ENV Shield (Für Thermometer)
-- Mikrophon *Grove Sound Sensor v1.6* (Für DB Messer)
+- Mikrophon *Grove Sound Sensor v1.6* (Für dB Messer)
 - SD-Karte
 - 2 Grüne LED
 - 2 Gelbe LED
@@ -105,30 +105,30 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 Die Funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
-**1. DB Meter**
-   - Beim DB Meter werden nur die grünen, gelben und roten LEDs genutzt. 
-   - Das erste grünen LED leuchtet wenn der DB Wert 50db oder mehr erreicht.
-   - Das zweite grüne LED leuchtet wenn der DB Wert 60db oder mehr erreicht. 
-   - Das erste gelben LED leuchtet wenn der DB Wert 70db oder mehr erreicht.
-   - Das zweite gelbe LED leuchtet wenn der DB Wert 80db oder mehr erreicht.
-   - Das erste rote LED leuchtet wenn der DB Wert 90db oder mehr erreicht.
-   - Das zweite rote LED leuchtet wenn der DB Wert 100db oder mehhr erreicht.
+**1. dB Meter**
+   - Beim dB Meter werden nur die grünen, gelben und roten LEDs genutzt. 
+   - Das erste grünen LED leuchtet wenn der dB Wert 50db oder mehr erreicht.
+   - Das zweite grüne LED leuchtet wenn der dB Wert 60db oder mehr erreicht. 
+   - Das erste gelben LED leuchtet wenn der dB Wert 70db oder mehr erreicht.
+   - Das zweite gelbe LED leuchtet wenn der dB Wert 80db oder mehr erreicht.
+   - Das erste rote LED leuchtet wenn der dB Wert 90db oder mehr erreicht.
+   - Das zweite rote LED leuchtet wenn der dB Wert 100db oder mehhr erreicht.
 
 
 **2. Temp Meter**
    - Beim Temp Meter werden die grünen, gelben, roten und blauen LEDs gebraucht
    - Das erste grünen LED leuchtet wenn der Temp Wert 20° oder mehr erreicht.
-   - Das zweite grüne LED leuchtet wenn der DB Wert 25° oder mehr erreicht. 
-   - Das erste gelben LED leuchtet wenn der DB Wert 27° oder mehr erreicht.
-   - Das zweite gelbe LED leuchtet wenn der DB Wert 29° oder mehr erreicht.
-   - Das erste rote LED leuchtet wenn der DB Wert 31° oder mehr erreicht.
-   - Das zweite rote LED leuchtet wenn der DB Wert 35° oder mehhr erreicht.
-   - Das blaue LED leuchtet wenn der DB Wert unter 19.99° oder weniger fällt.
+   - Das zweite grüne LED leuchtet wenn der dB Wert 25° oder mehr erreicht. 
+   - Das erste gelben LED leuchtet wenn der dB Wert 27° oder mehr erreicht.
+   - Das zweite gelbe LED leuchtet wenn der dB Wert 29° oder mehr erreicht.
+   - Das erste rote LED leuchtet wenn der dB Wert 31° oder mehr erreicht.
+   - Das zweite rote LED leuchtet wenn der dB Wert 35° oder mehhr erreicht.
+   - Das blaue LED leuchtet wenn der dB Wert unter 19.99° oder weniger fällt.
 
 **3. Sonstiges**
-   - Die DB und Temp Daten werden per ENV Shiel auf eine SD Karte geloggt. Beide Werte werden in ein separates File geschrieben.
-   - Wenn man das Programm starte und ein mal den Knopf druckt, wechselt der Arduino in den Temp Meter und merkt sich die Anzahl Knopfdrücke
-   - Wenn man im Temp Meter den Knopfdrückt, zählt er die Anzahl Knopf Drücke zusammen und wechselt in den DB Meter
+   - Die dB Daten werden per Mikrofon auf eine SD Karte geloggt. Der Wert wir in ein eigenes csv File gespeichert.
+   - Die Temperatur Daten werden per Mikrofon auf eine SD Karte geloggt. Der Wert wir in ein eigenes csv File gespeichert.
+   - Durch einen Knopfdruckt kann man von einem Programm in das andere gehen. Es fängt mit dem Tempmeter an, dann werden die Temp daten geloggt, als drittes kommt der db Meter und als guter letzt werden die db Daten geloggt.
 
 ## Nicht-funktionale Anforderungen
 
@@ -145,10 +145,10 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
    Wenn das Programm ohne ENV Shield gestartet wird, gibt dies der Serial Monitor aus.
 
 **3. Mikrofon entfernen**
-   Wenn währen dem Programm das Mikrofon entfernt wird, leuchten alle LEDs mehr.
+   Wenn währen dem Programm das Mikrofon entfernt wird, werden keien dB Werte mehr ausgegeben.
 
-**4. Dritter Knopfdruck**
-   Wenn man im DB Meter ist und man den Knopf einmal drückt, zählt er die Anzahl Knopdrücke zusammen und wechselt wieder in den defaul herein wo keine LEDs aktiv sind.
+**4. Knopfdruck im Programm 4**
+   Wenn man im letzten Programm ist (dB Werte Loggen) und dann den Knopfdruckt, setzt er den Count wieder zurück.
   
 ## Signalbeschrieb
 
@@ -297,7 +297,7 @@ Testgruppen
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
 |  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |
-|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (DB meter)
+|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (dB meter)
 |  30-3  |  3 Knopfdruck  | Knopf im Case 2 nochmals drücken  |  Keine LEDs aktiv  |
 
 **TG-40**
@@ -385,7 +385,7 @@ Testgruppen
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
 |  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |
-|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (DB meter)
+|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (dB meter)
 |  30-3  |  3 Knopfdruck  | Knopf im Case 2 nochmals drücken  |  Keine LEDs aktiv  |
 
 **TG-40**
@@ -418,7 +418,7 @@ Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne
 5. Dezibel auslesen in Seriel Monitor [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Measure_DB/Measure_DB.ino)
 6. Temperatur auslesen in Seriel Monitor [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Measure_Temperature/Measure_Temperature.ino) 
 7. ENV Shield Infos auf SD Karte schreiben [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/store_data_in_memory_card_envshield/store_data_in_memory_card_envshield.ino)
-8. DB Meter Infos auf SD karte schreiben [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/db_SD/db_SD.ino)
+8. dB Meter Infos auf SD karte schreiben [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/db_SD/db_SD.ino)
 9. Dezibel Meter [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED_DBMeter/LED_DBMeter.ino)
 10. Temperatur Meter [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-TempMeter/LED-TempMeter.ino)
 
@@ -462,11 +462,11 @@ Grösstes erfolgserlebnis. Nach langem zusammenbauen, recherchieren, testen und 
 
 Hier ein Video darüber welches direkt nach dem Erfolg aufgenommen wurde.
 
-[Video DB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
+[Video dB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
 
 **Flashback 6**
 
-Programm wechsel zwischen DB und Temp Meter per Knopfdruck funktioniert!!!!!
+Programm wechsel zwischen dB und Temp Meter per Knopfdruck funktioniert!!!!!
 
 Nach dem wir alle einzel ansteuerungen erfolgreich erstellt haben, mussten wir diese alle in ein Programm zusammenführen. Leider funktionierte dies am Anfang nicht so wie wir wollten. Gemäss den Problemen die wir hatten, stellten wir fest (oder wir dachten es zumindest), dass unsere Projekt Idee so wie wir es wollten technisch garnicht funktioniert. Nach langem diskutieren, recherchieren und testen, kamen wir auf eine Lösung und unsere Idee war plötzlich technisch möglich.
 
