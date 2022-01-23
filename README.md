@@ -164,7 +164,7 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 |Wertebereich| 0 V oder 3.3 V |
 |Umwandlung| 0 V entspricht keiner Funktion und 3.3 V entspricht change case |
 
-![Button](../IG1_LEDProjekt/00_img/Projekt/H467c4839b81d4b7aa0d582f94eb170f4X.jpg)
+![Button](/IG1_LEDProjekt/00_img/Projekt/H467c4839b81d4b7aa0d582f94eb170f4X.jpg)
  
 **2. Mikrofon am Eingang (Grove Sound Sensor v1.6)**
 
@@ -187,7 +187,7 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 |Microphone Frequency|16-20 kHz|
 |Microphone S/N Radio|54 dB|
 
-![Grove Sound Sensor v1.6](../IG1_LEDProjekt/00_img/Projekt/Grove%20Sound%20Sensor%20v1.6.png)
+![Grove Sound Sensor v1.6](/IG1_LEDProjekt/00_img/Projekt/Grove%20Sound%20Sensor%20v1.6.png)
 
 
 **3. LED am Ausgang**
@@ -198,7 +198,7 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 |Wertebereich| zwischen 0 und 3.3 V |
 |Umwandlung| 0 V LED deaktiviert 3.3 V LED aktiv |
 
-![Arduino LED](../IG1_LEDProjekt/00_img/Projekt/arduino_led.png)
+![Arduino LED](/IG1_LEDProjekt/00_img/Projekt/arduino_led.png)
 
 **4. ENV Shield**
 
@@ -208,12 +208,12 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 |Wertebereich|   |
 |Umwandlung|  |
 
-![ENV Shield](../IG1_LEDProjekt/00_img/Projekt/Arduino-ASX00029-30213156-01.jpg)
+![ENV Shield](/IG1_LEDProjekt/00_img/Projekt/Arduino-ASX00029-30213156-01.jpg)
 
 **5. SD Karte**
 
 So sieht das Schemabild von der SD Karte aus welche auf dem ENV Shield ist. 
-![Schema von SD](../IG1_LEDProjekt/00_img/Projekt/sd_karte.png)
+![Schema von SD](/IG1_LEDProjekt/00_img/Projekt/sd_karte.png)
 
 Hier ist der Link zum ganzen Schemabild vom ENV Shield: [Arduino ENV Shield Shematics](https://content.arduino.cc/assets/MKRENVShieldV4.0_sch.pdf?_gl=1*1issfvw*_ga*ODA3NzI5MTkxLjE2MzM5NTUwMTU.*_ga_NEXN8H46L5*MTY0MjM0ODU4MC4xOS4xLjE2NDIzNDg1ODAuMA..)
 
