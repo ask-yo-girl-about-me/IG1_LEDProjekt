@@ -158,15 +158,19 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
 **1. Schalter am Eingang**
 
+Um zwischen den Programm zu wechseln, wird der folgende Button eingesetzt: 
+
 |Parameter|Beschreibung|
 |-----|------|
 |Signalart| Gleichspannung |
 |Wertebereich| 0 V oder 3.3 V |
 |Umwandlung| 0 V entspricht keiner Funktion und 3.3 V entspricht change case |
 
-![Button](/IG1_LEDProjekt/00_img/Projekt/H467c4839b81d4b7aa0d582f94eb170f4X.jpg)
+![Button](00_img/Projekt/H467c4839b81d4b7aa0d582f94eb170f4X.jpg)
  
 **2. Mikrofon am Eingang (Grove Sound Sensor v1.6)**
+
+Um zu detektieren, wie laut es ist, wird der folgende Sensor eingesetzt: 
 
 |Parameter|Beschreibung|
 |-----|------|
@@ -192,6 +196,8 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
 **3. LED am Ausgang**
 
+Um zu anzuzeigen, wie laut oder warm es ist, wirden folgende LEDs eingesetzt: 
+
 |Parameter|Beschreibung|
 |-----|------|
 |Signalart| Gleichspannung |
@@ -202,15 +208,26 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
 **4. ENV Shield**
 
+Um zu detektieren, wie die Temperatur ist, wird der folgende Sensor eingesetzt: 
+
 |Parameter|Beschreibung|
 |-----|------|
-|Signalart|  |
-|Wertebereich|   |
-|Umwandlung|  |
+|ICS| LPS22HB / TEMT6000 |
+|Input Voltage| 3.3V  |
+| Operating Voltage | 3.3V |
+| Ranges | Pressure: 260 to 1260 hPa rH sensitivity: 0.004% rH/LSB Humidity accuracy: ± 35% rH, 20 to +80% rH UVA, UVB and UVBI measurment0 0 to 650 Lux |
+| Communications | I2C/Analog |
+| Length | 61mm |
+| Width | 25mm |
+| Weight | 32g |
+
+	
 
 ![ENV Shield](/00_img/Projekt/Arduino-ASX00029-30213156-01.jpg)
 
 **5. SD Karte**
+
+Um die Daten zu loggen, wird folgendes SD Modul auf dem ENV Shield eingesetzt: 
 
 So sieht das Schemabild von der SD Karte aus welche auf dem ENV Shield ist. 
 ![Schema von SD](/00_img/Projekt/sd_karte.png)
@@ -260,27 +277,35 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 >- *"Die Verknüpfungen (Logik) der Ein- und Ausgangssignale sind vollständig beschrieben"*
 
-|  MIC   |   PIN A0    |  AnalogRead Werte |Ausgang |
-|--------|--------|--------|--------|
-|   50 dB   |   -    |        |    LED Grün Pin 0    |
-|   60dB   |   -    |        |    LED Grün Pin 1    |
-|   70dB   |   -    |        |    LED Gelb Pin 2    |
-|   80dB   |   -    |        |    LED Gelb Pin 3    |
-|   90dB   |   -    |        |    LED Rot Pin 4     |
-|   100dB   |   -    |        |    LED Rot Pin 5     |
+**1. Grove Sound Sensor v1.6**
 
-| Button |   PIN 8   |  Programm |
+|  Input   |   Output   |  Beschreibung |
 |--------|--------|--------|
-|   0     |   -     |    Programm 1    |
-|   1     |   -     |    Programm 2    |
-|   1     |    -    |    Programm 3    |
+|   PIN A0   |   LED grün Pin 0 ein oder ausschalten   |    Wenn >50db   |
+|   PIN A0   |    LED grün Pin 1 ein oder ausschalten   |   Wenn >60db    |
+|   PIN A0   |   LED gelb Pin 2 ein oder ausschalten   |   Wenn >70db     |
+|   PIN A0   |   LED gelb Pin 3 ein oder ausschalten   |   Wenn >80db     |
+|   PIN A0   |   LED rot Pin 4 ein oder ausschalten   |    Wenn >90db    |
+|   PIN A0   |   LED rot Pin 5 ein oder ausschalten   |   Wenn >100db     |
+|   PIN A0   |   LED blau Pin A1 ein oder ausschalten   |    Bei dB nicht im gebraucht    |
 
-| LED    | PIN 0-6   |Ausgang |
+**2. ENV Shield Temperatur**
+
+|  Input   |   Output   |  Beschreibung |
 |--------|--------|--------|
-|   0     |   -     |    Nicht aktiv    |
-|   1     |   -     |    Aktiv    |
+|   ENV Shield Temperatur   |   LED grün Pin 0 ein oder ausschalten   |    Wenn >20°   |
+|   ENV Shield Temperatur   |   LED grün Pin 1 ein oder ausschalten   |   Wenn >25°    |
+|   ENV Shield Temperatur   |   LED gelb Pin 2 ein oder ausschalten   |   Wenn >27°     |
+|   ENV Shield Temperatur   |   LED gelb Pin 3 ein oder ausschalten   |   Wenn >29°     |
+|   ENV Shield Temperatur   |   LED rot Pin 4 ein oder ausschalten   |    Wenn >31°    |
+|   ENV Shield Temperatur   |   LED rot Pin 5 ein oder ausschalten   |   Wenn >35°     |
+|   ENV Shield Temperatur   |   LED blau Pin A1 ein oder ausschalten   |    Wenn <19.9°    |
 
+**Button**
 
+|  Input   |   Output   |  Beschreibung |
+|--------|--------|--------|
+|   PIN 8 Gedrückt ja/nein   |   Count value steigt und nächstes Programm startet   | Es zählz immer einen dazu, bis 5 dann resetet er den count   |
 
 ## Programm-Ablauf
 
