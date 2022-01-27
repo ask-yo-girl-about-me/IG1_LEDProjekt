@@ -76,8 +76,8 @@ Am 04.11.2021 wurde eine zweite Version des Projekt Beschriebs erstellt. Dies wu
 
 Hier den definierten Projekt Beschrieb vom [Projektantrag V2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf):
 
-In unserem Projekt handelt es sich um zwei integrierte Programme mit LEDs. Per Druck-Knopf wechseln wir durch die verschiedenen Programme durch. Programm eins handelt sich um die aktuelle Temperatur, welche durch Ändern der Farbe auf den LEDs angezeigt wird. Programm zwei handelt sich um einen dB Meter. Das Programm startet mit deaktivierten LEDs. Sobald Ton erkannt wird, werden die LEDs gemäss dB von unten nach oben aktiviert. Dies wird zusätzlich noch mit Farbe (Rote, grüne und Gelbe LEDs) gekennzeichnet.
-Der Programmwechsel durch den Knopf wird mittels Blinkens von grünen LEDs angezeigt. Programm eins blinkt einmal für eine definierte Zeit. Programm zwei blinkt zwei Mal für eine definierte Zeit.
+*In unserem Projekt handelt es sich um zwei integrierte Programme mit LEDs. Per Druck-Knopf wechseln wir durch die verschiedenen Programme durch. Programm eins handelt sich um die aktuelle Temperatur, welche durch Ändern der Farbe auf den LEDs angezeigt wird. Programm zwei handelt sich um einen dB Meter. Das Programm startet mit deaktivierten LEDs. Sobald Ton erkannt wird, werden die LEDs gemäss dB von unten nach oben aktiviert. Dies wird zusätzlich noch mit Farbe (Rote, grüne und Gelbe LEDs) gekennzeichnet.
+Der Programmwechsel durch den Knopf wird mittels Blinkens von grünen LEDs angezeigt. Programm eins blinkt einmal für eine definierte Zeit. Programm zwei blinkt zwei Mal für eine definierte Zeit.*
 
 Optional wenn noch Zeit zur Verfügung ist:
 - Messwerte auf eine SD-Karte Protokollieren
@@ -93,6 +93,14 @@ Erforderliche Hardware für Projekt:
 - Druck-Knopf
 
 ---
+
+**Änderungen zum Projektbeschrieb**
+
+Grundsätzlich wurden alle Anforderungen erfüllt welche wir uns selbst im Projekt beschrieb gestellt haben. Wir haben aber einzelne Punkte aus schönheitsgründen angepasst oder mussten sogar aus technischen gründen gewisse Punkte anpassen.
+
+Blinken der grünenn LEDs beim Programm wechsel, wurde ausgetauscht mit einem einzelnen Blauen LED. Dies blinkt immer die Programm nummer vor dem starten des einzelnen Programmes.
+
+Der optionale Punkt mit dem daten loggen haben wir uns natürlich auch zur arbeit gemacht. Damit dies aber technisch funktioniert, mussten wir das Programm ausweiten. Anstatt zwei counts (Knopfdrucke) mussten wir dies auf 5 ausweiten. Somit haben wir den Temperatr Meter, Dezibel Meter, Temperatur Log und Dezibel Log erfolgreich programmiert.
 
 # Analyse
 Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man für die Realisation braucht.
@@ -826,6 +834,11 @@ Alles in allem war es aber ein Erfolg. Wir sind mit unserer Leistung zufrieden u
 
 # Fazit
 
+Wir hatten viele Ups and Downs in Verlauf des Projektes. Leider mehr Misserfolge als erfolge, jedoch haben wir stehts das Endprodukt im Auge gehabt und somit die aufgetretenen Probleme zielführend gelöst. Zurückblicken können wir auch sagen, dass viele Probleme durch unsere nicht vorhandene Erfahrung im Programmieren und die fehlenden Wiesen in der Elektrotechnik entstanden. Mit den zunehmenden Informationen, die wir in den Lektionen erhalten haben und der Zeit die wir in der Freizeit in das Projekt investierten, konnten wir uns das Wiesen so erarbeiten.
+
+User Fazit aus der Projektarbeit ist, dass wir egal was für ein Problem auftritt Positiv nach vorne schauen und manchmal einen Schritt zurück machen müssen, damit der Lösungsweg ersichtlich wird. Das Projekt hat uns meistens Spass gemacht und somit auch unsere Interessen geweckt, in Zukunft mit Microcontrollern zu pröbeln und somit unsere Persönliche Interessen zu im Privaten leben umzusetzen.
+
+---
 
 >«Wir erklären hiermit, dass wir diese Arbeit selbständig verfasst und keine anderen als die angegebenen Quellen benutzt haben. Alle Stellen, die wörtlich oder sinngemäss aus Quellen entnommen wurden, haben wir als solche gekennzeichnet.»
 
