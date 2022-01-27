@@ -34,7 +34,7 @@ Dies ist das Projekt von Herr Schmidli und Herr Götzer. In der GITHUB Ablage fi
 ---
 
 # Projekt-Auftrag
-Der Projekt Auftrag kann grundsätzlich vom Dokument [ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/01_Allgemein/01_Projektinfos/ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf) entnommen werden. 
+Der Projekt Auftrag kann grundsätzlich vom Dokument [ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf](/01_Allgemein/01_Projektinfos/ITSE21a_IG1_Projektauftrag_Arduino_210908.pdf) entnommen werden. 
 
 Diese Infos wurde aus dem vorhin erwähnten PDF kopiert!
 
@@ -70,11 +70,11 @@ In diesem Projekt soll eine einfache Aufgabenstellung mit einem Microcontroller 
 # Projekt Beschrieb
 Der Projekt Beschrieb, basiert auf dem Projekt Antrag. Der Projektbeschrieb wurde durch Herr Schmidli und Herr Götzer erstellt. Dieser wurde durch Herr Jäger abgesegnet und somit per PDF festgehalten. 
 
-Das Original ist hier zu finden: [Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf)
+Das Original ist hier zu finden: [Goetzer_Schmidli_ITSE21a_IG1_Projektantrag.pdf](/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V1.pdf)
 
 Am 04.11.2021 wurde eine zweite Version des Projekt Beschriebs erstellt. Dies wurde aus dem Grund gemacht, da wir Probleme hatten mit der LED Hardware. Somit haben wir den Projektantrag minim angepasst um das Problem mit den LED Stripes zu umgehen.
 
-Hier den definierten Projekt Beschrieb vom [Projektantrag V2](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf):
+Hier den definierten Projekt Beschrieb vom [Projektantrag V2](/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf):
 
 *In unserem Projekt handelt es sich um zwei integrierte Programme mit LEDs. Per Druck-Knopf wechseln wir durch die verschiedenen Programme durch. Programm eins handelt sich um die aktuelle Temperatur, welche durch Ändern der Farbe auf den LEDs angezeigt wird. Programm zwei handelt sich um einen dB Meter. Das Programm startet mit deaktivierten LEDs. Sobald Ton erkannt wird, werden die LEDs gemäss dB von unten nach oben aktiviert. Dies wird zusätzlich noch mit Farbe (Rote, grüne und Gelbe LEDs) gekennzeichnet.
 Der Programmwechsel durch den Knopf wird mittels Blinkens von grünen LEDs angezeigt. Programm eins blinkt einmal für eine definierte Zeit. Programm zwei blinkt zwei Mal für eine definierte Zeit.*
@@ -756,16 +756,15 @@ Nach dem wir unser Projekt beschrieb fertig hatten, machten wir uns an das Detai
 
 Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne. Somit machten wir uns an die ansteuerung der einzelnen Geräten.
 
-1. Einzelne LED ansteuern [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Einzeln/LED-Einzeln.ino)
-2. LED Testing [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Testing/LED-Testing.ino)
-3. Button funktionalität [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/button/button.ino)
-4. Switch Case mit Button [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/switchcase_button/switchcase_button.ino)
-5. Dezibel auslesen in Seriel Monitor [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Measure_DB/Measure_DB.ino)
-6. Temperatur auslesen in Seriel Monitor [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Measure_Temperature/Measure_Temperature.ino) 
-7. ENV Shield Infos auf SD Karte schreiben [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/store_data_in_memory_card_envshield/store_data_in_memory_card_envshield.ino)
-8. dB Meter Infos auf SD karte schreiben [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/db_SD/db_SD.ino)
-9. Dezibel Meter [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED_DBMeter/LED_DBMeter.ino)
-10. Temperatur Meter [Link](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-TempMeter/LED-TempMeter.ino)
+1. Einzelne LED ansteuern [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Einzeln/LED-Einzeln.ino)
+2. LED Testing [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Testing/LED-Testing.ino)
+3. Button funktionalität [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Button/Button.ino)
+4. Dezibel auslesen in Seriel Monitor [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Measure_DB/Measure_DB.ino)
+5. Temperatur auslesen in Seriel Monitor [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/Measure_Temperature/Measure_Temperature.ino) 
+6. ENV Shield Infos auf SD Karte schreiben [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/store_data_in_memory_card_envshield/store_data_in_memory_card_envshield.ino)
+7. dB Meter Infos auf SD karte schreiben [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/SD_Writer/DB_SD/db_SD.ino)
+8. Dezibel Meter [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED_DBMeter/LED_DBMeter.ino)
+9.  Temperatur Meter [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-TempMeter/LED-TempMeter.ino)
 
 Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenführen aller Programme, damit diese in einem einzenlnen Programm tangiert.
 
@@ -843,4 +842,4 @@ User Fazit aus der Projektarbeit ist, dass wir egal was für ein Problem auftrit
 >«Wir erklären hiermit, dass wir diese Arbeit selbständig verfasst und keine anderen als die angegebenen Quellen benutzt haben. Alle Stellen, die wörtlich oder sinngemäss aus Quellen entnommen wurden, haben wir als solche gekennzeichnet.»
 
 
-[^1]: [SPI/SCLK/MOSI/MISO](https://de.wikipedia.org/wiki/Serial_Peripheral_Interface)
+[^1]: Wikipedia: [SPI/SCLK/MOSI/MISO](https://de.wikipedia.org/wiki/Serial_Peripheral_Interface)
