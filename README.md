@@ -265,9 +265,7 @@ Hier ist Grafisch aufgezeigt, wie eine SD Karte auf dem ENV Shield arbeitet.
 >- *"Saubere und übersichtliche Darstellung: keine oder wenig Kreuzungen, nur horizontale oder vertikale Linien, Beschriftung sämtlicher Elemente"*
 
 
-Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. Dieses unten noch als Bild aufgezeigt.
-
-[TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
+Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wurde. [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
 **Breit Format**
 
@@ -358,7 +356,6 @@ Testgruppen
 |  10-1  |  Grüne LEDS  | Auf Handy Musik laufen lassen welche zwischen 50db und 60db ist | Es dürfen nur die grünen LEDs leuchten
 |  10-2  |  Gelben LEDS  |   Auf Handy Musik laufen lassen welche zwischen 70db und 80db ist | Es müssen die grünen und die gelben LEDs leuchten |
 |  10-3  |  Roten LEDS  |  Auf Handy Musik laufen lassen welche zwischen 90db und 100db ist | Die grünen, gelben und roten LEDs müssen aktiv sein |
-|  10-4  |  Kein Microfon  |  Microfon entfernen während dem Betrieb  |  Keine LEDs sind aktiv | 
 
 **TG-20**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
@@ -372,14 +369,15 @@ Testgruppen
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
 |  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |
-|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (dB meter)
-|  30-3  |  3 Knopfdruck  | Knopf im Case 2 nochmals drücken  |  Keine LEDs aktiv  |
+|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (Temperatur Log)
+|  30-3  |  In das dritte Programm wechseln  | Knopf im Case 2 nochmals drücken  |  3 Case läuft durch (Dezibel Meter)  |
+|  30-4  |  In das vierte Programm wechseln  | Knopf im Case 3 nochmals drücken  |  4 Case läuft durch (Dezibel Log)  |
 
 **TG-40**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
 |--------|--------|--------|--------|
-|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptop anschliesen  | Ein CSV File mit den Daten enthalten. Dezibel-Value. |
-|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte.  |
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptop anschliesen  | Ein CSV File mit den Dezibel Daten ist vorhanden. |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date ist vorhanden.  |
 |  40-3  |  SD Karte entfernen  | SD Karte währent dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |
 |  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |
 
@@ -698,41 +696,42 @@ Hier ist der Code noch als Text aufgeführt:
 
 |  Nr.  |  Thema  |  Was?  |  Resultat  |
 |--------|--------|--------|--------|
-|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |  |
-|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |   |
-|  TG-30  |  Change Case  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |    |
-|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |   |
+|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  | ✓ |
+|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |  ✓ |
+|  TG-30  |  Change Case  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |  ✓  |
+|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |  ✓ |
 
 **TG-10**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|-------|
-|  10-1  |  Grüne LEDS  | Auf Handy Musik laufen lassen welche zwischen 50db und 60db ist | Es dürfen nur die grünen LEDs leuchten
-|  10-2  |  Gelben LEDS  |   Auf Handy Musik laufen lassen welche zwischen 70db und 80db ist | Es müssen die grünen und die gelben LEDs leuchten |
-|  10-3  |  Roten LEDS  |  Auf Handy Musik laufen lassen welche zwischen 90db und 100db ist | Die grünen, gelben und roten LEDs müssen aktiv sein |
-|  10-4  |  Kein Microfon  |  Microfon entfernen während dem Betrieb  |  Keine LEDs sind aktiv | 
+|  10-1  |  Grüne LEDS  | Auf Handy Musik laufen lassen welche zwischen 50db und 60db ist | Es dürfen nur die grünen LEDs leuchten|  ✓ |
+|  10-2  |  Gelben LEDS  |   Auf Handy Musik laufen lassen welche zwischen 70db und 80db ist | Es müssen die grünen und die gelben LEDs leuchten |  ✓ |
+|  10-3  |  Roten LEDS  |  Auf Handy Musik laufen lassen welche zwischen 90db und 100db ist | Die grünen, gelben und roten LEDs müssen aktiv sein |  ✓ |
+
 
 **TG-20**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
-|  20-1  |  Grüne LEDs  |  Temperatur muss zwischen 20° und 25° sein | Nur die grüne LEDs dürfen aktiv sein|
-|  20-2  |  Gelbe LEDs  |  Temperatur muss zwischen 27° und 29° sein | Die grüne und gelben LEDs müssen aktiv sein |
-|  20-3  |  Roten LEDs  |  Temperatur muss zwischen 31° und 35° sein  | Die grüne. gelben und roten LEDs müssen aktiv sein |
-|  20-4  |  Blaue LEDs  |  Temperatur muss auf 19.99 oder weniger reguliert werden | Die blaue LED muss aktiv sein |
+|  20-1  |  Grüne LEDs  |  Temperatur muss zwischen 20° und 25° sein | Nur die grüne LEDs dürfen aktiv sein| ✓  |
+|  20-2  |  Gelbe LEDs  |  Temperatur muss zwischen 27° und 29° sein | Die grüne und gelben LEDs müssen aktiv sein |  ✓ |
+|  20-3  |  Roten LEDs  |  Temperatur muss zwischen 31° und 35° sein  | Die grüne. gelben und roten LEDs müssen aktiv sein |  ✓ |
+|  20-4  |  Blaue LEDs  |  Temperatur muss auf 19.99 oder weniger reguliert werden | Die blaue LED muss aktiv sein | ✓  |
 
 **TG-30**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
-|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |
-|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (dB meter)
-|  30-3  |  3 Knopfdruck  | Knopf im Case 2 nochmals drücken  |  Keine LEDs aktiv  |
+|  30-1  |  In das erste Programm wechseln  | Nach dem Programm Start Knopf ein Mal drücken  | 1 Case läuft durch (Tempmeter) |  ✓ |
+|  30-2  | In das zweite Programm wechseln   | Wenn man in Case 1 ist Knopf nochmals drücken | 2 Case läuft durch (Temperatur Log)|  ✓ |
+|  30-3  |  In das dritte Programm wechseln  | Knopf im Case 2 nochmals drücken  |  3 Case läuft durch (Dezibel Meter)  |  ✓ |
+|  30-4  |  In das vierte Programm wechseln  | Knopf im Case 3 nochmals drücken  |  4 Case läuft durch (Dezibel Log)  |  ✓ |
 
 **TG-40**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  | Resultat |
 |--------|--------|--------|--------|--------|
-|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptop anschliesen  | Ein CSV File mit den Daten enthalten. Dezibel-Value. |
-|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte.  |
-|  40-3  |  SD Karte entfernen  | SD Karte währent dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |
-|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |
+|  40-1  |  Dezibel Daten werden geloggt  |  Das ganze per SD Karte und dem Microfon. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptop anschliesen  | Ein CSV File mit den Daten enthalten. Dezibel-Value. |  ✓ |
+|  40-2  |  Temperatur Daten werden geloggt  | Das ganze per SD Karte und dem ENV Shield. SD Karte nach durchlaufen des Programms entfernen und an einen PC/Laptopn anschliesen  | Ein CSV File mit den Temperatur Date enthalte.  |  ✓ |
+|  40-3  |  SD Karte entfernen  | SD Karte währent dem laufen des Programms entfernen  | Daten sind auf in CSV enthalten |  ✓ |
+|  40-4  |  Keine SD Karte  | Das Programm ohne SD Karte starten  | Meldung im Serial Monitor, dass keien SD Karte vorhanden ist. |  ✓ |
 
 
 
