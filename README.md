@@ -409,6 +409,11 @@ Testgruppen
 
 Die Realisierung wurde gemäss Anforderungen, welche durch den Lehrer festgelegt wurden und dem Projekt beschrieb, welcher durch Herr Schmidli und Herr Götzer definiert wurden, durchgeführt.
 
+![Bild 1](/00_img/Realisierung/1.jpg)
+![Bild 2](/00_img/Realisierung/2.jpg)
+
+
+
 ---
 
 
