@@ -96,11 +96,11 @@ Erforderliche Hardware für Projekt:
 
 **Änderungen zum Projektbeschrieb**
 
-Grundsätzlich wurden alle Anforderungen erfüllt welche wir uns selbst im Projekt beschrieb gestellt haben. Wir haben aber einzelne Punkte aus schönheitsgründen angepasst oder mussten sogar aus technischen gründen gewisse Punkte anpassen.
+Grundsätzlich wurden alle Anforderungen erfüllt, welche wir uns selbst im Projekt beschrieb gestellt haben. Wir haben aber einzelne Punkte aus schönheitsgründen angepasst oder mussten sogar aus technischen Gründen gewisse Punkte anpassen.
 
-Blinken der grünenn LEDs beim Programm wechsel, wurde ausgetauscht mit einem einzelnen Blauen LED. Dies blinkt immer die Programm nummer vor dem starten des einzelnen Programmes.
+Blinken der grünen LEDs beim Programm wechsel, wurde ausgetauscht mit einem einzelnen Blauen LED. Dies blinkt immer die Programmnummer vor dem Starten des einzelnen Programmes.
 
-Der optionale Punkt mit dem daten loggen haben wir uns natürlich auch zur arbeit gemacht. Damit dies aber technisch funktioniert, mussten wir das Programm ausweiten. Anstatt zwei counts (Knopfdrucke) mussten wir dies auf 5 ausweiten. Somit haben wir den Temperatr Meter, Dezibel Meter, Temperatur Log und Dezibel Log erfolgreich programmiert.
+Der optionale Punkt, mit dem daten loggen haben wir uns natürlich auch zur Arbeit gemacht. Damit dies aber technisch funktioniert, mussten wir das Programm ausweiten. Anstatt zwei Counts (Knopfdrucke) mussten wir dies auf 5 ausweiten. Somit haben wir den Temperatur Meter, Dezibel Meter, Temperatur Log und Dezibel Log erfolgreich programmiert.
 
 # Analyse
 Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man für die Realisation braucht.
@@ -111,7 +111,7 @@ Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man
 
 >- *"Es gibt eine vollständige Liste mit den funktionalen Anforderungen und diese sind umfassend beschrieben (SMART)"*
 
-Die Funktionalen Anforderungen wurden anhand von den Testcases definiert.
+Die funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
 **1. dB Meter**
    - Beim dB Meter werden nur die grünen, gelben und roten LEDs genutzt. 
@@ -134,9 +134,9 @@ Die Funktionalen Anforderungen wurden anhand von den Testcases definiert.
    - Das blaue LED leuchtet wenn der dB Wert unter 19.99° oder weniger fällt.
 
 **3. Sonstiges**
-   - Die dB Daten werden per Mikrofon auf eine SD Karte geloggt. Der Wert wir in ein eigenes csv File gespeichert.
-   - Die Temperatur Daten werden per Mikrofon auf eine SD Karte geloggt. Der Wert wir in ein eigenes csv File gespeichert.
-   - Durch einen Knopfdruckt kann man von einem Programm in das andere gehen. Es fängt mit dem Tempmeter an, dann werden die Temp daten geloggt, als drittes kommt der db Meter und als guter letzt werden die db Daten geloggt.
+   - Die dB Daten werden per Mikrofon auf eine SD Karte geloggt. Der Wert wir in ein eigenes CSV File gespeichert.
+   - Die Temperatur Daten werden per Mikrofon auf eine SD Karte geloggt. Der Wert wir in ein eigenes CSV File gespeichert.
+   - Durch einen Knopfdruck kann man von einem Programm in das andere gehen. Es fängt mit dem Tempmeter an, dann werden die Temp daten geloggt, als drittes kommt der dB Meter und als guter letzt werden die db Daten geloggt.
 
 ## Nicht-funktionale Anforderungen
 
@@ -204,7 +204,7 @@ Um zu detektieren, wie laut es ist, wird der folgende Sensor eingesetzt:
 
 **3. LED am Ausgang**
 
-Um zu anzuzeigen, wie laut oder warm es ist, wirden folgende LEDs eingesetzt: 
+Um anzuzeigen, wie laut oder warm es ist, wirden folgende LEDs eingesetzt: 
 
 |Parameter|Beschreibung|
 |-----|------|
@@ -328,7 +328,7 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](03_Projekt/01_Structorizer)
 
-Das Komplette Struktogramm enthalt zusätzlich noch die Dezibel und Temperature Werte welche beim gekürzten nicht aufgezeigt sind. Dies wurde aus darstellungsgründen so gemacht.
+Das komplette Struktogramm enthält zusätzlich noch die Dezibel und Temperatur Werte, welche beim gekürzten nicht aufgezeigt sind. Dies wurde aus Darstellungsgründen so gemacht.
 
 **Gekürztes Struktogramm**
 
@@ -353,10 +353,10 @@ Testgruppen
 
 |  Nr.  |  Thema  |  Was?  |
 |--------|--------|--------|
-|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
-|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
-|  TG-30  |  Change Case  |  Der Case Change wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
-|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine funktionalitäten gemäss Funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-10  |  Dezibel Meter  |  Der Dezibel Meter wird auf seine Funktionalitäten  gemäss funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-20  |  Temperatur Meter  |  Der Temperatur Meter wird auf seine Funktionalitäten  gemäss funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-30  |  Change Case  |  Der Case Change wird auf seine Funktionalitäten  gemäss funktionalen und nicht-funktionalen Anforderungen überprüft  |
+|  TG-40  |  SD Loggin  |  Das loggen auf die SD Karte wird auf seine Funktionalitäten  gemäss funktionalen und nicht-funktionalen Anforderungen überprüft  |
 
 **TG-10**
 |  Nr.  |  Was  |  Wie  |  Erwartetes Resultat  |
@@ -407,7 +407,7 @@ Testgruppen
 >- *Sämtliche funktionalen und nicht-funktionalen Anforderungen werden erfüllt und können demonstriert werden*
 >- *Zweckmässiger, robuster Aufbau*
 
-Die Realisierung wurde gemäss anforderungen welche durch den Lehrer festgelet wurden und dem Projekt beschrieb welcher durch Herr Schmidli und Herr Götzer definiert wurden durchgeführt.
+Die Realisierung wurde gemäss Anforderungen, welche durch den Lehrer festgelegt wurden und dem Projekt beschrieb, welcher durch Herr Schmidli und Herr Götzer definiert wurden, durchgeführt.
 
 ---
 
@@ -750,11 +750,11 @@ Hier ist der Code noch als Text aufgeführt:
 
 ## Geschichte
 
-Als erstes haben wir mal Ideen gesammelt, was wir als Projekt machen können. Im Internet haben wir gesehen, dass man mit dem Arduino LEDs ansteuern kann mit LED Streifen. Somit haben wir dies als Grundbau genommen und sind mit der Idee gekommn einen mit LED Streifen einen Dezibel und Temperatur Meter zu machen. Leider mussten wir dies dann aber durch gewisse Progleme durch einzelne LEDs wechseln. 
+Als Erstes haben wir mal Ideen gesammelt, was wir als Projekt machen können. Im Internet haben wir gesehen, dass man mit dem Arduino LEDs ansteuern kann mit LED-Streifen. Somit haben wir dies als Grundbau genommen und sind mit der Idee gekommen einen Dezibel und Temperatur Meter zu machen mit LED-Streifen. Leider mussten wir dies dann aber durch gewisse Probleme durch einzelne LEDs wechseln. 
 
-Nach dem wir unser Projekt beschrieb fertig hatten, machten wir uns an das Detail-Schema und das Struktogramm. Somit haben wir im TinkerCAD das Detail-Schema so aufgebaut wie wir uns das vorgestellt haben und es so dann auch einfacher haben in echt aufzubauen. Das Struktogramm haben wir per Structorizer gezeichnet und haben uns so schon mal einen grundbau für das Programm erstellt.
+Nachdem wir unser Projekt beschrieb, fertig hatten, machten wir uns an das Detail-Schema und das Struktogramm. Somit haben wir im TinkerCAD das Detail-Schema so aufgebaut, wie wir uns das vorgestellt haben und es so dann auch einfacher haben in echt aufzubauen. Das Struktogramm haben wir per Structorizer gezeichnet und haben uns so schon mal einen Grundbau für das Programm erstellt.
 
-Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne. Somit machten wir uns an die ansteuerung der einzelnen Geräten.
+Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmieren. Somit machten wir uns an die ansteuerung der einzelnen Geräten.
 
 1. Einzelne LED ansteuern [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Einzeln/LED-Einzeln.ino)
 2. LED Testing [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-Testing/LED-Testing.ino)
@@ -766,35 +766,35 @@ Nun ist das Grundfundament aufgebaut und alles ist bereit für das Programmierne
 8. Dezibel Meter [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED_DBMeter/LED_DBMeter.ino)
 9.  Temperatur Meter [Link](/03_Projekt/03_Arduino_Sketches/02_Einzelansteuerungen/LED-TempMeter/LED-TempMeter.ino)
 
-Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenführen aller Programme, damit diese in einem einzenlnen Programm tangiert.
+Sobald wir alle einzelnen Ansteuerungen hatten, machten wir uns an das Zusammenführen aller Programme, damit diese in einem einzelnen Programm tangiert.
 
 ## Flashbacks
 
-Hier werden einige Flashbacks aufgezeigt, welche eine Wichtige Rolle in dem ganzen Projekt gespielt haben. 
-Die anten kann man sogar als Milestones anschauen.
+Hier werden einige Flashbacks aufgezeigt, welche eine wichtige Rolle in dem ganzen Projekt gespielt haben. 
+Die einten kann man sogar als Milestones anschauen.
 
 **Flashback 1**
 
-Das erste mal den Arduino auf der Steckerplatine mit den LEDs verbunden. Dies war das erste erfolgserlebniss von uns beiden. Wir natürlich zuerst die LEDs einmal austesten und schauen wie diese funktionieren.
+Das erste Mal den Arduino auf der Steckerplatine mit den LEDs verbunden. Dies war das erste Erfolgserlebnis von uns beiden. Wir natürlich zuerst die LEDs einmal austesten und schauen, wie diese funktionieren.
 
 ![Flashback1](00_img/Flashbacks/1.jpg)
 
 **Flashback 2**
 
-Hier haben wir verzeifelt den LED Streifen mit unserem Dezibel Meter getestet. Leider funktionierte es aber nie so wie wir wollten. Teilweise machte der LED Streifen garnichts und manchmals machte er sehr komische Sachen, welche wir uns nicht erklären konnten.
+Hier haben wir verzweifelt den LED-Streifen mit unserem Dezibel Meter getestet. Leider funktionierte es aber nie so, wie wir wollten. Teilweise machte der LED-Streifen gar nichts und manchmal machte er sehr komische Sachen, welche wir uns nicht erklären konnten.
 
 ![Flashback2](00_img/Flashbacks/2.jpg)
 
 **Flashback 3**
 
-Der grosse wechsel auf die LEDs. Nach dem wir mit Herr Jäger darum gesprochen haben, dass wir sehr viel Zeit verlieren mit dem LED Streifen, haben wir uns entschlossen das Projekt ein bisschen anzupassen. Wir haben den LED Streifen mit einzelnen LEDs ausgetauscht. Somit können wir die LEDs einzeln ansteuern aber die Hauptidee bleibt gleich. Nach langer Zeit hatte wir mal ein erfolgserlebis, als die einzelnen LEDs geleichtet haben. Dies gab uns nach den vielen misserfolgen, die wir bis hier hin hatten wieder einen kleinen kick für die Motivation.
+Der grosse Wechsel auf die LEDs. Nachdem wir mit Herr Jäger darum gesprochen haben, dass wir sehr viel Zeit verlieren mit dem LED-Streifen, haben wir uns entschlossen, das Projekt ein bisschen anzupassen. Wir haben den LED-Streifen mit einzelnen LEDs ausgetauscht. Somit können wir die LEDs einzeln ansteuern, aber die Hauptidee bleibt gleich. Nach langer Zeit hatte wir mal ein Erfolgserlebnis, als die einzelnen LEDs geleuchtet haben. Dies gab uns nach den vielen Misserfolgen, die wir bis anhin hatten, wieder einen kleinen Kick für die Motivation.
 
 ![Flashback3](00_img/Flashbacks/3.0.jpg)
 
 **Flashback 4**
 
-Wir haben lange mit dem Button gespielt und hatten auch zwei drei kleine hindernisse. Schlussentlich konnten wir entlich die verknüpfung mit der Theorie welche wir hatten zusammenschliessen.
-Wir mussten uns effektiv mit einem Pull up / down Schaltung auseinander setzen. Wir haben dies zuerst einfach nach Gefühl angeschlossen, aber haben bemerkt, dass dies nicht korrekt durchlauft. Somit haben wir uns mit Herr Jäger damit auseinander gesetzt und bemerkt, dass wir den den Pull Up / Down entweder in unsere Schaltung einbauen müssen oder dies per Code definieren. Dies war eine Interessante feststellung und sehr lehrreich.
+Wir haben lange mit dem Button gespielt und hatten auch zwei, drei kleine Hindernisse. Schlussendlich konnten wir endlich die Verknüpfung mit der Theorie, welche wir hatten zusammenschliessen.
+Wir mussten uns effektiv mit einem Pull Up / down Schaltung auseinandersetzen. Wir haben dies zuerst einfach nach Gefühl angeschlossen, aber haben bemerkt, dass dies nicht korrekt durchlauft. Somit haben wir uns mit Herrn Jäger damit auseinandergesetzt und bemerkt, dass wir den Pull Up / Down entweder in unsere Schaltung einbauen müssen oder dies per Code definieren. Dies war eine interessante Feststellung und sehr lehrreich.
 
 ![Flashback3.1](00_img/Flashbacks/3.1.jpg)
 
@@ -802,9 +802,9 @@ Wir mussten uns effektiv mit einem Pull up / down Schaltung auseinander setzen. 
 
 **Flashback 5**
 
-Grösstes erfolgserlebnis. Nach langem zusammenbauen, recherchieren, testen und misserfolgen, funktionierte unser Dezibel Messer. Dies war ein sehr schöner Moment für uns beiden. An diesem Punkt hatte wird wieder ein bischen einen Motivationsschub und wir freuten uns sehr über diesen Erfolg.
+Grösstes Erfolgserlebnis. Nach langem zusammenbauen, recherchieren, testen und Misserfolgen funktionierte unser Dezibel Messer. Dies war ein sehr schöner Moment für uns beiden. An diesem Punkt hatte wird wieder ein bisschen einen Motivationsschub und wir freuten uns sehr über diesen Erfolg.
 
-Hier ein Video darüber welches direkt nach dem Erfolg aufgenommen wurde.
+Hier ein Video darüber, welches direkt nach dem Erfolg aufgenommen wurde.
 
 [Video dB Meter](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/blob/main/00_img/Flashbacks/4.MP4)
 
@@ -812,20 +812,20 @@ Hier ein Video darüber welches direkt nach dem Erfolg aufgenommen wurde.
 
 Programm wechsel zwischen dB und Temp Meter per Knopfdruck funktioniert!!!!!
 
-Nach dem wir alle einzel ansteuerungen erfolgreich erstellt haben, mussten wir diese alle in ein Programm zusammenführen. Leider funktionierte dies am Anfang nicht so wie wir wollten. Gemäss den Problemen die wir hatten, stellten wir fest (oder wir dachten es zumindest), dass unsere Projekt Idee so wie wir es wollten technisch garnicht funktioniert. Nach langem diskutieren, recherchieren und testen, kamen wir auf eine Lösung und unsere Idee war plötzlich technisch möglich.
+Nach dem wir alle Einzel Ansteuerungen erfolgreich erstellt haben, mussten wir diese alle in ein Programm zusammenführen. Leider funktionierte dies am Anfang nicht so wie wir wollten. Gemäss den Problemen, die wir hatten, stellten wir fest (oder, wir dachten es zumindest), dass unsere Projektidee so wie wir es wollten, technisch gar nicht funktioniert. Nach langem diskutieren, recherchieren und testen, kamen wir auf eine Lösung und unsere Idee war plötzlich technisch möglich.
 
 
 ---
 
 # Reflexion (Problemstellungen)
 
-Nun am ende mit dem Projekt, können wir beide sagen, dass es ein harter weg war bis ans ende. Wir waren beide sehr Motiviert auf das Projekt und auch unsere Idee. Leider mussten wir recht schnell viele Misserfolge erleben betreffend Hardware und auch nicht funktionierenden Programme. Es hat angefangen mit unwissen von der Programmiersprache C++ welche uns mühe machte. Es ging weiter mit dem LED Streifen welche nur Probleme machte und dem ENV Shield welches ebenfalls nicht funktionierte und so weiter.
+Nun am ende mit dem Projekt, können wir beide sagen, dass es ein Harter weg war bis ans Ende. Wir waren beide sehr motiviert auf das Projekt und auch unsere Idee. Leider mussten wir recht schnell viele Misserfolge erleben betreffend Hardware und auch nicht funktionierenden Programme. Es hat angefangen mit Unwissen von der Programmiersprache C++, welche uns mühe machte. Es ging weiter mit dem LED-Streifen, welche nur Probleme machte und dem ENV Shield welches ebenfalls nicht funktionierte und so weiter.
 
-Ein weiteres Hinderniss war, dass die LED Library welche wir brauchten nur dann funktionierte, wenn wir den Arduino MKR1000 ausgewählt hatte, obwohl wir einen MKR1010 hatten. Nach dem wir dies herausgefunden haben und so unsere Programme weiter getestet hatte, mussten wir feststellen, das der Computer nun unseren Arduino nicht mehr als MKR1010 sieht sonder als MKR1000. Somit mussten wir sogar unser Arduino umstauschen weil alles andere nicht mehr funktioniert hat.
+Ein weiteres Hindernis war, dass die LED Library welche wir brauchten, nur dann funktionierte, wenn wir den Arduino MKR1000 ausgewählt hatte, obwohl wir einen MKR1010 hatten. Nachdem wir dies herausgefunden haben und so unsere Programme weiter getestet hatte, mussten wir feststellen, dass der Computer nun unseren Arduino nicht mehr als MKR1010 sieht, sonder als MKR1000. Somit mussten wir sogar unser Arduino umtauschen, weil alles andere nicht mehr funktioniert hat.
 
-Wir versuchten aber stets die Motivation oben zu behalten um so an das Ziel zu kommen, auch wenn es nicht immer einfach war. Trotzdem haben wir viel gelertn und kamn sehr weit in unserem Projekt. Den grundfundament von unserem Projekt haben wir erreicht und grundsätzlich das Ziel so erreich. An dieser Stelle muss man natürlich auch sagen, dass die Hilfe von Herr Jäger natürlich auch sehr hilfreich war.
+Wir versuchten aber stets die Motivation oben zu behalten, um so an das Ziel zu kommen, auch wenn es nicht immer einfach war. Trotzdem haben wir viel gelernt und kann sehr weit in unserem Projekt. Das Grundfundament von unserem Projekt haben wir erreicht und grundsätzlich das Ziel so erreich. An dieser Stelle muss man natürlich auch sagen, dass die Hilfe von Herrn Jäger natürlich auch sehr hilfreich war.
 
-Gegen den Schluss mussten wir aber feststellen, dass unsere vorstellungen von einem Programm welches einen Switch Case enthält und eigentlich zwei Programme in einem enthält nicht ganz funktioniert.
+Gegen den Schluss mussten wir aber feststellen, dass unsere Vorstellungen von einem Programm, welches einen Switch Case enthält und eigentlich zwei Programme in einem enthält, nicht ganz funktioniert.
 
 Alles in allem war es aber ein Erfolg. Wir sind mit unserer Leistung zufrieden und stolz darauf, was wir alles erarbeitet haben. Wir hatten beide keine Erfahrung mit Programmieren und mussten uns alles selbst beibringen. Dazu muss man auch sagen, dass wir unser Projekt von den Anforderungen bisschen zu hoch gesetzt haben für unser Wissen.
 
@@ -833,9 +833,9 @@ Alles in allem war es aber ein Erfolg. Wir sind mit unserer Leistung zufrieden u
 
 # Fazit
 
-Wir hatten viele Ups and Downs in Verlauf des Projektes. Leider mehr Misserfolge als erfolge, jedoch haben wir stehts das Endprodukt im Auge gehabt und somit die aufgetretenen Probleme zielführend gelöst. Zurückblicken können wir auch sagen, dass viele Probleme durch unsere nicht vorhandene Erfahrung im Programmieren und die fehlenden Wiesen in der Elektrotechnik entstanden. Mit den zunehmenden Informationen, die wir in den Lektionen erhalten haben und der Zeit die wir in der Freizeit in das Projekt investierten, konnten wir uns das Wiesen so erarbeiten.
+Wir hatten viele Ups and Downs in Verlauf des Projektes. Leider mehr Misserfolge als Erfolge jedoch haben wir stets das Endprodukt im Auge gehabt und somit die aufgetretenen Probleme zielführend gelöst. Zurückblicken können wir auch sagen, dass viele Probleme durch unsere nicht vorhandene Erfahrung im Programmieren und die fehlenden Wiesen in der Elektrotechnik entstanden. Mit den zunehmenden Informationen, die wir in den Lektionen erhalten haben und der Zeit, die wir in der Freizeit in das Projekt investierten, konnten wir uns das Wissen so erarbeiten.
 
-User Fazit aus der Projektarbeit ist, dass wir egal was für ein Problem auftritt Positiv nach vorne schauen und manchmal einen Schritt zurück machen müssen, damit der Lösungsweg ersichtlich wird. Das Projekt hat uns meistens Spass gemacht und somit auch unsere Interessen geweckt, in Zukunft mit Microcontrollern zu pröbeln und somit unsere Persönliche Interessen zu im Privaten leben umzusetzen.
+User Fazit aus der Projektarbeit ist, dass wir egal was für ein Problem auftritt Positiv nach vorne schauen und manchmal einen Schritt zurückmachen müssen, damit der Lösungsweg ersichtlich wird. Das Projekt hat uns meistens Spass gemacht und somit auch unsere Interessen geweckt, in Zukunft mit Mikrocontroller zu pröbeln und somit unsere persönliche Interessen zu im Privaten leben umzusetzen.
 
 ---
 
