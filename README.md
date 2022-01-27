@@ -320,9 +320,21 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 >- *"Der Programmablauf ist mit einer geeigneten Darstellungsmethode (Struktogramm, Flussdiagramm, Statemachine, …) vollständig beschrieben*
 >- *"Der Programmablauf ist sauber gezeichnet""*
 
-Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](https://github.com/ask-yo-girl-about-me/IG1_LEDProjekt/tree/main/03_Projekt/01_Structorizer)
+Die Datenablage für den Programm-Ablaufen finden Sie hier: [Ablage Programm-Ablauf](03_Projekt/01_Structorizer)
 
-![Struktogramm](03_Projekt/01_Structorizer/IG1_Structorizer.png)
+Das Komplette Struktogramm enthalt zusätzlich noch die Dezibel und Temperature Werte welche beim gekürzten nicht aufgezeigt sind. Dies wurde aus darstellungsgründen so gemacht.
+
+**Gekürztes Struktogramm**
+
+Link zum [Gekürzten Struktogramm](03_Projekt/01_Structorizer/IG1_Structorizer_gekürzt.png)
+
+![Gekürztes Struktogramm Bild](03_Projekt/01_Structorizer/IG1_Structorizer_gekürzt.png)
+
+**Komplettes Struktogramm**
+
+Link zum [Kompletten Struktogramm](03_Projekt/01_Structorizer/IG1_Structorizer_komplett.png)
+
+![Struktogramm](03_Projekt/01_Structorizer/IG1_Structorizer_komplett.png)
 
 ## Definierte-Testcases
 
