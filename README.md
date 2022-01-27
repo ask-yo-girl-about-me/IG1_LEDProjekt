@@ -269,7 +269,13 @@ Hier finden sie den Link zur TinkerCAD Seite wo das Blockschaltbild erstellt wur
 
 [TinkerCAD](https://www.tinkercad.com/things/7osfcFXCBFJ)
 
-![TinkerCAD](03_Projekt/02_TinkerCAD/IG1_LEDProjekt.png)
+**Breit Format**
+
+![TinkerCAD](03_Projekt/02_TinkerCAD/IG1_LEDProjekt_breit.jpg)
+
+**Hoch Format**
+
+![TinkerCAD](03_Projekt/02_TinkerCAD/IG1_LEDProjekt_hoch.jpg)
 
 ## Werte-Zuweisungs-Tabelle
 
