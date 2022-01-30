@@ -102,6 +102,10 @@ Blinken der grünen LEDs beim Programm wechsel, wurde ausgetauscht mit einem ein
 
 Der optionale Punkt, mit dem daten loggen haben wir uns natürlich auch zur Arbeit gemacht. Damit dies aber technisch funktioniert, mussten wir das Programm ausweiten. Anstatt zwei Counts (Knopfdrucke) mussten wir dies auf 5 ausweiten. Somit haben wir den Temperatur Meter, Dezibel Meter, Temperatur Log und Dezibel Log erfolgreich programmiert.
 
+**Abgabe Dokumentation**
+
+Da das Exportieren in ein PDF sehr aufwendig war und schlussendlich nicht gut aussah, verzichteten wir darauf. Das GitHub wurde zwar als PDF-Dokumentation abgegeben, nur sind dort keine Bilder enthalten. Somit empfehlen wir, das Projekt anhand vom GitHub zu entnehmen. Hier sind alle Bilder, Links, Tabellen und alles weitere schön gegliedert und aufgezeigt.
+
 # Analyse
 Hier bei der Analyse werden alle nötigen Infos definiert aufgezeigt, welche man für die Realisation braucht.
 
