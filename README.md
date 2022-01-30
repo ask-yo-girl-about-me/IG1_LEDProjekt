@@ -70,11 +70,11 @@ In diesem Projekt soll eine einfache Aufgabenstellung mit einem Microcontroller 
 # Projekt Beschrieb
 Der Projekt Beschrieb, basiert auf dem Projekt Antrag. Der Projektbeschrieb wurde durch Herr Schmidli und Herr Götzer erstellt. Dieser wurde durch Herr Jäger abgesegnet und somit per PDF festgehalten. 
 
-Das Original ist hier zu finden: [Goetzer_Schmidli_ITSE21a_IG1_Projektantrag.pdf](/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V1.pdf)
+Das Original ist hier zu finden: [Goetzer_Schmidli_ITSE21a_IG1_Projektantrag.pdf](/02_Documents/01_Projektbezogenes/Projektantrag/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V1.pdf)
 
 Am 04.11.2021 wurde eine zweite Version des Projekt Beschriebs erstellt. Dies wurde aus dem Grund gemacht, da wir Probleme hatten mit der LED Hardware. Somit haben wir den Projektantrag minim angepasst um das Problem mit den LED Stripes zu umgehen.
 
-Hier den definierten Projekt Beschrieb vom [Projektantrag V2](/02_Documents/01_Projektbezogenes/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf):
+Hier den definierten Projekt Beschrieb vom [Projektantrag V2](/02_Documents/01_Projektbezogenes/Projektantrag/Goetzer_Schmidli_ITSE21a_IG1_Projektantrag_V2.pdf):
 
 *In unserem Projekt handelt es sich um zwei integrierte Programme mit LEDs. Per Druck-Knopf wechseln wir durch die verschiedenen Programme durch. Programm eins handelt sich um die aktuelle Temperatur, welche durch Ändern der Farbe auf den LEDs angezeigt wird. Programm zwei handelt sich um einen dB Meter. Das Programm startet mit deaktivierten LEDs. Sobald Ton erkannt wird, werden die LEDs gemäss dB von unten nach oben aktiviert. Dies wird zusätzlich noch mit Farbe (Rote, grüne und Gelbe LEDs) gekennzeichnet.
 Der Programmwechsel durch den Knopf wird mittels Blinkens von grünen LEDs angezeigt. Programm eins blinkt einmal für eine definierte Zeit. Programm zwei blinkt zwei Mal für eine definierte Zeit.*
@@ -151,9 +151,6 @@ Die Nicht-funktionalen Anforderungen wurden anhand von den Testcases definiert.
 
 **2. Kein Shield aktiv**
    Wenn das Programm ohne ENV Shield gestartet wird, gibt dies der Serial Monitor aus.
-
-**3. Mikrofon entfernen**
-   Wenn währen dem Programm das Mikrofon entfernt wird, werden keien dB Werte mehr ausgegeben.
 
 **4. Knopfdruck im Programm 4**
    Wenn man im letzten Programm ist (dB Werte Loggen) und dann den Knopfdruckt, setzt er den Count wieder zurück.
